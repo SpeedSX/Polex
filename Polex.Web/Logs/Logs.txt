@@ -1,0 +1,399 @@
+DEBUG 2016-05-19 10:03:09,114 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-19 10:03:12,011 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-05-19 10:03:12,016 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,018 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,018 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,020 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,020 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Polex.PolexApplicationModule, Polex.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,020 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Polex.PolexCoreModule, Polex.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,020 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Polex.PolexDataModule, Polex.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,020 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Polex.Web.PolexWebModule, Polex.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,020 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Polex.Api.PolexWebApiModule, Polex.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-19 10:03:12,026 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-05-19 10:03:12,126 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-19 10:03:12,126 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-19 10:03:12,126 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-19 10:03:12,126 [1    ] o.Configuration.LanguageManagementConfig - Converted Polex (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-05-19 10:03:12,424 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-05-19 10:03:12,874 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-05-19 10:03:15,670 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-19 10:03:15,687 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-19 10:03:15,688 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-19 10:03:15,691 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-19 10:03:15,719 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Polex
+DEBUG 2016-05-19 10:03:15,731 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-05-19 10:03:15,786 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-05-19 10:03:15,790 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@Polex'.
+INFO  2016-05-19 10:03:15,790 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-05-19 10:03:15,790 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-05-19 10:03:15,790 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-05-19 10:03:15,790 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-05-19 10:03:15,790 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-05-19 10:03:15,791 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-05-19 10:03:15,791 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-05-19 10:03:15,821 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-05-19 10:03:16,164 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes defines auto mapping attributes
+DEBUG 2016-05-19 10:03:16,164 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-05-19 10:03:16,357 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-05-19 10:03:16,387 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-05-19 10:03:16,393 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-05-19 10:03:16,393 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-05-19 10:03:16,393 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-05-19 10:03:16,395 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-05-19 10:03:16,397 [82874] Hangfire.Server.Worker                   - Background process 'Worker #01c82874' started.
+DEBUG 2016-05-19 10:03:16,469 [b3090] Hangfire.Server.Worker                   - Background process 'Worker #6acb3090' started.
+DEBUG 2016-05-19 10:03:16,473 [6f64d] Hangfire.Server.Worker                   - Background process 'Worker #cf06f64d' started.
+DEBUG 2016-05-19 10:03:16,475 [e8d25] Hangfire.Server.Worker                   - Background process 'Worker #50be8d25' started.
+DEBUG 2016-05-19 10:03:16,477 [63719] Hangfire.Server.Worker                   - Background process 'Worker #11763719' started.
+DEBUG 2016-05-19 10:03:16,482 [106a3] Hangfire.Server.Worker                   - Background process 'Worker #1d0106a3' started.
+DEBUG 2016-05-19 10:03:16,487 [b6dd2] Hangfire.Server.Worker                   - Background process 'Worker #bb8b6dd2' started.
+DEBUG 2016-05-19 10:03:16,491 [90d59] Hangfire.Server.Worker                   - Background process 'Worker #bb390d59' started.
+DEBUG 2016-05-19 10:03:16,493 [672cd] Hangfire.Server.Worker                   - Background process 'Worker #f66672cd' started.
+DEBUG 2016-05-19 10:03:16,496 [be081] Hangfire.Server.Worker                   - Background process 'Worker #27bbe081' started.
+DEBUG 2016-05-19 10:03:16,503 [e3810] Hangfire.Server.Worker                   - Background process 'Worker #f36e3810' started.
+DEBUG 2016-05-19 10:03:16,507 [30118] Hangfire.Server.Worker                   - Background process 'Worker #18030118' started.
+DEBUG 2016-05-19 10:03:16,548 [44743] Hangfire.Server.Worker                   - Background process 'Worker #93b44743' started.
+DEBUG 2016-05-19 10:03:16,562 [4e4b9] Hangfire.Server.Worker                   - Background process 'Worker #e454e4b9' started.
+DEBUG 2016-05-19 10:03:16,569 [bca9b] Hangfire.Server.Worker                   - Background process 'Worker #df6bca9b' started.
+DEBUG 2016-05-19 10:03:16,579 [dcb2d] Hangfire.Server.Worker                   - Background process 'Worker #ad2dcb2d' started.
+DEBUG 2016-05-19 10:03:16,585 [0c75f] Hangfire.Server.Worker                   - Background process 'Worker #e5d0c75f' started.
+DEBUG 2016-05-19 10:03:16,586 [085a7] Hangfire.Server.Worker                   - Background process 'Worker #c75085a7' started.
+DEBUG 2016-05-19 10:03:16,589 [ab54b] Hangfire.Server.Worker                   - Background process 'Worker #181ab54b' started.
+DEBUG 2016-05-19 10:03:16,593 [589a1] Hangfire.Server.Worker                   - Background process 'Worker #29d589a1' started.
+DEBUG 2016-05-19 10:03:16,616 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-05-19 10:03:16,618 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-05-19 10:03:16,874 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-05-19 10:03:17,002 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-05-19 10:03:17,005 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-05-19 10:03:17,007 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-05-19 10:03:17,015 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-19 10:03:17,017 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.Users.Dto.CreateUserInput
+DEBUG 2016-05-19 10:03:17,047 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-19 10:03:17,048 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-19 10:03:17,049 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.Users.Dto.UserListDto
+DEBUG 2016-05-19 10:03:17,051 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-19 10:03:17,080 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Polex.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-19 10:03:17,083 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Polex.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-19 10:03:17,085 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Polex.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-19 10:03:17,086 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Polex.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-05-19 10:04:01,336 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7bd2d70d-70e6-4bf4-a333-b3129a2bb36d","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-05-19T10:04:01.3225214+03:00","Properties":{}}
+DEBUG 2016-05-19 10:04:01,406 [50   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7bd2d70d-70e6-4bf4-a333-b3129a2bb36d
+WARN  2016-05-19 10:05:21,534 [46   ] Polex.Web.Controllers.AccountController  - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at Polex.Web.Controllers.AccountController.<GetLoginResultAsync>d__7.MoveNext() in d:\Projects\Polex.ABP2\Polex.Web\Controllers\AccountController.cs:line 111
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Polex.Web.Controllers.AccountController.<Login>d__2.MoveNext() in d:\Projects\Polex.ABP2\Polex.Web\Controllers\AccountController.cs:line 81
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-05-19 10:05:41,282 [55   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7bd2d70d-70e6-4bf4-a333-b3129a2bb36d
+ERROR 2016-05-19 10:06:37,515 [54   ] lers.Filters.AbpExceptionFilterAttribute - Current user did not login to the application!
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizeAttributeHelper.<AuthorizeAsync>d__13.MoveNext() in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Authorization\AuthorizeAttributeHelper.cs:line 29
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Threading.AsyncHelper.RunSync(Func`1 action) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Threading\AsyncHelper.cs:line 42
+   at Abp.Authorization.AuthorizeAttributeHelper.Authorize(IEnumerable`1 authorizeAttributes) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Authorization\AuthorizeAttributeHelper.cs:line 45
+   at Abp.Authorization.Interceptors.AuthorizationInterceptor.Authorize(IEnumerable`1 authorizeAttributes) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:line 86
+   at Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:line 78
+   at Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:line 43
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 62
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 41
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 34
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Auditing\AuditingInterceptor.cs:line 45
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:line 17
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.SessionAppServiceProxy.GetCurrentLoginInformations()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Extensions\ExceptionExtensions.cs:line 18
+   at Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) in D:\Halil\GitHub\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:line 48
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.DynamicApiController`1Proxy.GetCurrentLoginInformations()
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass12.<GetExecutor>b__8(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+DEBUG 2016-05-19 10:06:41,450 [63   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a2b7e4ab-9078-41b4-b25b-155e68ff5bdc","IpAddress":"::1","TenantId":null,"UserId":null,"ConnectTime":"2016-05-19T10:06:41.450195+03:00","Properties":{}}
+DEBUG 2016-05-19 10:06:43,862 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a2b7e4ab-9078-41b4-b25b-155e68ff5bdc
+ERROR 2016-05-19 10:06:43,952 [54   ] lers.Filters.AbpExceptionFilterAttribute - Current user did not login to the application!
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizeAttributeHelper.<AuthorizeAsync>d__13.MoveNext() in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Authorization\AuthorizeAttributeHelper.cs:line 29
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Threading.AsyncHelper.RunSync(Func`1 action) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Threading\AsyncHelper.cs:line 42
+   at Abp.Authorization.AuthorizeAttributeHelper.Authorize(IEnumerable`1 authorizeAttributes) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Authorization\AuthorizeAttributeHelper.cs:line 45
+   at Abp.Authorization.Interceptors.AuthorizationInterceptor.Authorize(IEnumerable`1 authorizeAttributes) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:line 86
+   at Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:line 78
+   at Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:line 43
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 62
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 41
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 34
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Auditing.AuditingInterceptor.PerformAsyncAuditing(IInvocation invocation, AuditInfo auditInfo) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Auditing\AuditingInterceptor.cs:line 106
+   at Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Auditing\AuditingInterceptor.cs:line 53
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:line 17
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.UserAppServiceProxy.GetUsers()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) in D:\Halil\GitHub\aspnetboilerplate\src\Abp\Extensions\ExceptionExtensions.cs:line 18
+   at Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) in D:\Halil\GitHub\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:line 48
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.DynamicApiController`1Proxy_2.GetUsers()
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass12.<GetExecutor>b__8(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+DEBUG 2016-05-19 10:06:50,193 [67   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a2b7e4ab-9078-41b4-b25b-155e68ff5bdc
+DEBUG 2016-05-19 10:07:01,599 [66   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d0c56a6f-b49b-4446-a602-6cebc21271b2","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-05-19T10:07:01.5986336+03:00","Properties":{}}
+DEBUG 2016-05-19 10:07:01,623 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d0c56a6f-b49b-4446-a602-6cebc21271b2
+DEBUG 2016-05-19 10:07:58,969 [67   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d0c56a6f-b49b-4446-a602-6cebc21271b2
+DEBUG 2016-05-19 10:08:06,078 [63   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"1a93e0cf-a156-49cf-9999-9ddbf7f061d4","IpAddress":"::1","TenantId":2,"UserId":4,"ConnectTime":"2016-05-19T10:08:06.0778427+03:00","Properties":{}}
+DEBUG 2016-05-19 10:08:06,093 [63   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 1a93e0cf-a156-49cf-9999-9ddbf7f061d4
+DEBUG 2016-05-19 10:08:16,623 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-05-21 19:45:36,330 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-21 19:45:46,188 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-05-21 19:45:46,197 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,201 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,202 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,202 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,203 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,203 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,203 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,204 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,204 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,205 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,205 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,206 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Polex.PolexApplicationModule, Polex.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,206 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Polex.PolexCoreModule, Polex.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,225 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Polex.PolexDataModule, Polex.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,225 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Polex.Web.PolexWebModule, Polex.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,225 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Polex.Api.PolexWebApiModule, Polex.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-21 19:45:46,253 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-05-21 19:45:46,554 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-21 19:45:46,554 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-21 19:45:46,554 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-21 19:45:46,554 [1    ] o.Configuration.LanguageManagementConfig - Converted Polex (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-05-21 19:45:47,672 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-05-21 19:45:48,176 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-05-21 19:45:49,750 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-21 19:45:49,819 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-21 19:45:49,821 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-21 19:45:49,824 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-21 19:45:49,839 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Polex
+DEBUG 2016-05-21 19:45:49,848 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-05-21 19:45:49,961 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-05-21 19:45:49,966 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@Polex'.
+INFO  2016-05-21 19:45:49,966 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-05-21 19:45:49,966 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-05-21 19:45:49,966 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-05-21 19:45:49,966 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-05-21 19:45:49,967 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-05-21 19:45:49,967 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-05-21 19:45:49,967 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-05-21 19:45:50,044 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-05-21 19:45:50,534 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-05-21 19:45:50,557 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+INFO  2016-05-21 19:45:50,561 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2016-05-21 19:45:50,563 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-05-21 19:45:50,564 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-05-21 19:45:50,610 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-05-21 19:45:50,610 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-05-21 19:45:50,611 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-05-21 19:45:50,612 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-05-21 19:45:50,613 [d0202] Hangfire.Server.Worker                   - Background process 'Worker #425d0202' started.
+DEBUG 2016-05-21 19:45:50,619 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-05-21 19:45:50,665 [65413] Hangfire.Server.Worker                   - Background process 'Worker #ce865413' started.
+DEBUG 2016-05-21 19:45:50,670 [97302] Hangfire.Server.Worker                   - Background process 'Worker #afe97302' started.
+DEBUG 2016-05-21 19:45:50,674 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-05-21 19:45:50,681 [f8035] Hangfire.Server.Worker                   - Background process 'Worker #406f8035' started.
+DEBUG 2016-05-21 19:45:50,688 [75f94] Hangfire.Server.Worker                   - Background process 'Worker #98a75f94' started.
+DEBUG 2016-05-21 19:45:50,696 [73420] Hangfire.Server.Worker                   - Background process 'Worker #98673420' started.
+DEBUG 2016-05-21 19:45:50,698 [f75b7] Hangfire.Server.Worker                   - Background process 'Worker #296f75b7' started.
+DEBUG 2016-05-21 19:45:50,709 [01921] Hangfire.Server.Worker                   - Background process 'Worker #45501921' started.
+DEBUG 2016-05-21 19:45:50,714 [f0896] Hangfire.Server.Worker                   - Background process 'Worker #939f0896' started.
+DEBUG 2016-05-21 19:45:50,736 [4d7ed] Hangfire.Server.Worker                   - Background process 'Worker #3954d7ed' started.
+DEBUG 2016-05-21 19:45:50,788 [d2f82] Hangfire.Server.Worker                   - Background process 'Worker #b76d2f82' started.
+DEBUG 2016-05-21 19:45:50,789 [eb5ee] Hangfire.Server.Worker                   - Background process 'Worker #b4aeb5ee' started.
+DEBUG 2016-05-21 19:45:50,791 [e0f5d] Hangfire.Server.Worker                   - Background process 'Worker #c9de0f5d' started.
+DEBUG 2016-05-21 19:45:50,794 [d7089] Hangfire.Server.Worker                   - Background process 'Worker #7dad7089' started.
+DEBUG 2016-05-21 19:45:50,798 [e14c1] Hangfire.Server.Worker                   - Background process 'Worker #eafe14c1' started.
+DEBUG 2016-05-21 19:45:50,801 [8c06d] Hangfire.Server.Worker                   - Background process 'Worker #3a48c06d' started.
+DEBUG 2016-05-21 19:45:50,804 [7b306] Hangfire.Server.Worker                   - Background process 'Worker #b887b306' started.
+DEBUG 2016-05-21 19:45:50,808 [b403a] Hangfire.Server.Worker                   - Background process 'Worker #903b403a' started.
+DEBUG 2016-05-21 19:45:50,813 [e3fd5] Hangfire.Server.Worker                   - Background process 'Worker #10be3fd5' started.
+DEBUG 2016-05-21 19:45:50,817 [3368d] Hangfire.Server.Worker                   - Background process 'Worker #39c3368d' started.
+DEBUG 2016-05-21 19:45:50,820 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-05-21 19:45:50,823 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-05-21 19:45:50,829 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes defines auto mapping attributes
+DEBUG 2016-05-21 19:45:50,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-05-21 19:45:51,203 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-21 19:45:51,205 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.Users.Dto.CreateUserInput
+DEBUG 2016-05-21 19:45:51,232 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-21 19:45:51,234 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-21 19:45:51,235 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.Users.Dto.UserListDto
+DEBUG 2016-05-21 19:45:51,236 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Polex.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-21 19:45:51,312 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Polex.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-21 19:45:51,313 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Polex.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-21 19:45:51,315 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Polex.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-21 19:45:51,317 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Polex.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-21 19:46:05,836 [38   ] Polex.Web.Controllers.AccountController  - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at Polex.Web.Controllers.AccountController.<GetLoginResultAsync>d__7.MoveNext() in d:\Projects\Polex.ABP2\Polex.Web\Controllers\AccountController.cs:line 111
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Polex.Web.Controllers.AccountController.<Login>d__2.MoveNext() in d:\Projects\Polex.ABP2\Polex.Web\Controllers\AccountController.cs:line 81
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-05-21 19:46:12,064 [38   ] Polex.Web.Controllers.AccountController  - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at Polex.Web.Controllers.AccountController.<GetLoginResultAsync>d__7.MoveNext() in d:\Projects\Polex.ABP2\Polex.Web\Controllers\AccountController.cs:line 111
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Polex.Web.Controllers.AccountController.<Login>d__2.MoveNext() in d:\Projects\Polex.ABP2\Polex.Web\Controllers\AccountController.cs:line 81
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-05-21 19:47:06,833 [42   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a68bb1e5-fc18-487f-a15e-f8ac4bb38199","IpAddress":"::1","TenantId":2,"UserId":4,"ConnectTime":"2016-05-21T19:47:06.8241771+03:00","Properties":{}}
+DEBUG 2016-05-21 19:47:06,910 [42   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a68bb1e5-fc18-487f-a15e-f8ac4bb38199
+DEBUG 2016-05-21 19:47:42,984 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7d5d8d8e-14b7-4849-a240-fdba10dff24c","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-05-21T19:47:42.9836146+03:00","Properties":{}}
+DEBUG 2016-05-21 19:47:42,999 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7d5d8d8e-14b7-4849-a240-fdba10dff24c
+DEBUG 2016-05-21 19:47:46,719 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a68bb1e5-fc18-487f-a15e-f8ac4bb38199
+DEBUG 2016-05-21 19:50:50,686 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-05-21 19:51:37,088 [63   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7d5d8d8e-14b7-4849-a240-fdba10dff24c
