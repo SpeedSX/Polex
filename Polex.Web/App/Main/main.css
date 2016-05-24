@@ -34,3 +34,7 @@ body {
   left: 2em;
   opacity: 0;
 }
+.dropdown-menu > li > a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

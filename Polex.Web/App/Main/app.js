@@ -2,7 +2,7 @@
     'use strict';
     
     var app = angular.module('app', [
-        'ngAnimate',
+        //'ngAnimate',
         'ngSanitize',
 
         'ui.router',

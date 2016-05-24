@@ -30,6 +30,7 @@
     <text name="Tenants" value="Tenants" />
     <text name="SavedSuccessfully" value="Saved successfully" />
     <text name="CreateNewTenant" value="Create new tenant" />
+    <text name="TenantProperties" value="Tenant properties" />
     <text name="AdminEmailAddress" value="Admin email address" />
     <text name="Save" value="Save" />
     <text name="Cancel" value="Cancel" />
@@ -42,6 +43,14 @@
     <text name="TenantSelection" value="Tenant Selection" />
     <text name="TenantSelection_Detail" value="Please select one of the following tenants." />
     <text name="Logout" value="Logout" />
+    <text name="Properties" value="Properties" />
+    <text name="Actions" value="Actions" />
+    <text name="CreationTime" value="Created at" />
+    <text name="CreatorUserName" value="Created by" />
+    <text name="LastModificationTime" value="Last modified at" />
+    <text name="LastModifierUserName" value="Last modified by" />
+    
+    <text name="Delete" value="Delete" />
 
     <text name="RegisterFormUserNameInvalidMessage">Please dont enter an email address for username.</text>
 

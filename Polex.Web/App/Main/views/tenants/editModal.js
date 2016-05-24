@@ -1,19 +1,21 @@
 ﻿(function () {
-    angular.module('app').controller('app.views.tenants.createModal', [
-        '$scope', '$uibModalInstance', 'abp.services.app.tenant',
-        function ($scope, $uibModalInstance, tenantService) {
+    angular.module('app').controller('app.views.tenants.editModal', [
+        '$scope', '$uibModalInstance', 'abp.services.app.tenant', 'tenant',
+        function ($scope, $uibModalInstance, tenantService, tenant) {
             var vm = this;
 
             vm.tenant = {
-                tenancyName: '',
-                name: '',
+                id: tenant.id,
+                tenancyName: tenant.tenancyName,
+                name: tenant.name,
+                isActive: tenant.isActive,
                 adminEmailAddress: '',
                 connectionString: ''
             };
 
             vm.save = function () {
                 abp.ui.setBusy();
-                tenantService.createTenant(vm.tenant)
+                tenantService.updateTenant(vm.tenant)
                     .success(function () {
                         abp.notify.info(App.localize('SavedSuccessfully'));
                         $uibModalInstance.close();

@@ -8,12 +8,34 @@
                     <tr>
                         <th>@L("TenancyName")</th>
                         <th>@L("Name")</th>
+                        <th>@L("IsActive")</th>
+                        <th>@L("CreationTime")</th>
+                        <th>@L("CreatorUserName")</th>
+                        <th>@L("LastModificationTime")</th>
+                        <th>@L("LastModifierUserName")</th>
+                        <th></th>
                     </tr>
-                </thead>
+                </thead> 
                 <tbody>
                     <tr ng-repeat="tenant in vm.tenants">
-                        <td>{{tenant.tenancyName}}</td>
+                        <td><a href="#" ng-click="vm.editTenant(tenant)">{{tenant.tenancyName}}</a></td>
                         <td>{{tenant.name}}</td>
+                        <td>{{tenant.isActive ? '@L("Yes")' : '@L("No")'}}</td>
+                        <td>{{formatDate(tenant.creationTime)}}</td>
+                        <td>{{tenant.lastModifierUserName}}</td>
+                        <td>{{formatDate(tenant.lastModificationTime)}}</td>
+                        <td>{{tenant.creatorUserName}}</td>
+                        <td>
+                            <div class="btn-group pull-right" uib-dropdown>
+                                <button class="btn btn-primary btn-xs dropdown-toggle" uib-dropdown-toggle>
+                                    <i class="fa fa-cog"></i> @L("Actions") <span class="caret"></span>
+                                </button>
+                                <ul uib-dropdown-menu role="menu">
+                                    <li role="menuitem"><a href="#" ng-click="vm.editTenant(tenant)">@L("Properties")</a></li>
+                                    <li role="menuitem"><a href="#" ng-click="vm.deleteTenant(tenant)">@L("Delete")</a></li>
+                                </ul>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>

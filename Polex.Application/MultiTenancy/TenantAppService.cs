@@ -40,7 +40,6 @@ namespace Polex.MultiTenancy
             return new ListResultOutput<TenantListDto>(
                 _tenantManager.Tenants
                     .OrderBy(t => t.TenancyName)
-                    .ToList()
                     .MapTo<List<TenantListDto>>()
                 );
         }
@@ -86,6 +85,15 @@ namespace Polex.MultiTenancy
                 CheckErrors(await UserManager.AddToRoleAsync(adminUser.Id, adminRole.Name));
                 await CurrentUnitOfWork.SaveChangesAsync();
             }
+        }
+
+        public async Task UpdateTenant(UpdateTenantInput input)
+        {
+            var tenant = await TenantManager.GetByIdAsync(input.Id);
+            tenant.Name = input.Name;
+            tenant.IsActive = input.IsActive;
+            CheckErrors(await TenantManager.UpdateAsync(tenant));
+            await CurrentUnitOfWork.SaveChangesAsync();
         }
     }
 }

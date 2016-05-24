@@ -95,6 +95,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MultiTenancy\Dto\UpdateTenantInput.cs" />
     <Compile Include="PolexApplicationModule.cs" />
     <Compile Include="PolexAppServiceBase.cs" />
     <Compile Include="MultiTenancy\Dto\CreateTenantInput.cs" />
