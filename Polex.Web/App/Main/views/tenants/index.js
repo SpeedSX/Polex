@@ -42,7 +42,25 @@
             };
 
             vm.deleteTenant = function(tenant) {
-
+                sweetAlert({
+                    //title: App.localize("DeleteTenantConfirmationTitle"),
+                    title: '',
+                    text: App.localize("DeleteTenantConfirmationText"),
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#0054a6",
+                    confirmButtonText: App.localize("Yes"),
+                    cancelButtonText: App.localize("Cancel")
+                }, function () {
+                    abp.ui.setBusy();
+                    tenantService.deleteTenant(tenant.id)
+                        .success(function () {
+                            abp.notify.info(App.localize('DeletedSuccessfully'));
+                        }).finally(function() {
+                            abp.ui.clearBusy();
+                            getTenants();
+                        });
+                });
             };
 
             $scope.formatDate = function(dateString) {

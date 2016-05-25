@@ -29,7 +29,7 @@
                 title: 'Are you sure?',
                 showCancelButton: true,
                 cancelButtonText: 'Cancel',
-                confirmButtonColor: "#DD6B55",
+                confirmButtonColor: "#0054a6",
                 confirmButtonText: 'Yes'
             }
         }

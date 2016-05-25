@@ -49,6 +49,10 @@
     <text name="CreatorUserName" value="Користувач" />
     <text name="LastModificationTime" value="Дата модифікації" />
     <text name="LastModifierUserName" value="Користувач" />
+    <text name="DeleteTenantConfirmationTitle" value="Видалення організації" />
+    <text name="DeleteTenantConfirmationText" value="Ви впевнені, що бажаєте видалити організацію?" />
+    <text name="DeletedSuccessfully" value="Видалено успішно" />
+    <text name="IsActiveTenant" value="Активна" />
 
     <text name="Delete" value="Видалити" />
 
@@ -56,7 +60,7 @@
 
     <text name="DatabaseConnectionString" value="Строка з'єднання з базою" />
     <text name="Users" value="Користувачі" />
-    <text name="IsActiveUser" value="Активний" />
+    <text name="IsActive" value="Активний" />
     <text name="FullName" value="Повне ім'я" />
     <text name="CreateNewUser" value="Створити нового" />
     <text name="Yes" value="Так" />

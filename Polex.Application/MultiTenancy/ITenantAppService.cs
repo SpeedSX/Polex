@@ -12,5 +12,7 @@ namespace Polex.MultiTenancy
         Task CreateTenant(CreateTenantInput input);
 
         Task UpdateTenant(UpdateTenantInput input);
+
+        Task DeleteTenant(int id);
     }
 }

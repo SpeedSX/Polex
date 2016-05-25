@@ -1,5 +1,5 @@
-﻿- add ukr/rus localization 
-- edit tenant
-- edit user
-- change password
+﻿- edit user
+- delete tenant
+- change user password
 - use angular-moment to format dates
+- use bootstrap-material-design

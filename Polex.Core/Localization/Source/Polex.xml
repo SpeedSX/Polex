@@ -49,8 +49,11 @@
     <text name="CreatorUserName" value="Created by" />
     <text name="LastModificationTime" value="Last modified at" />
     <text name="LastModifierUserName" value="Last modified by" />
-    
+    <text name="DeleteTenantConfirmationTitle" value="Delete tenant" />
+    <text name="DeleteTenantConfirmationText" value="Are you sure you want to delete the tenant?" />
+    <text name="DeletedSuccessfully" value="Deleted successfully" />
     <text name="Delete" value="Delete" />
+    <text name="IsActiveTenant" value="Is active" />
 
     <text name="RegisterFormUserNameInvalidMessage">Please dont enter an email address for username.</text>
 

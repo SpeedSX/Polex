@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
@@ -93,6 +94,13 @@ namespace Polex.MultiTenancy
             tenant.Name = input.Name;
             tenant.IsActive = input.IsActive;
             CheckErrors(await TenantManager.UpdateAsync(tenant));
+            await CurrentUnitOfWork.SaveChangesAsync();
+        }
+
+        public async Task DeleteTenant(int id)
+        {
+            var tenant = await TenantManager.GetByIdAsync(id);
+            CheckErrors(await TenantManager.DeleteAsync(tenant));
             await CurrentUnitOfWork.SaveChangesAsync();
         }
     }
