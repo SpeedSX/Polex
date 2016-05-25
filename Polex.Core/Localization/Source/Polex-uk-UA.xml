@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="uk-UA">
+  <texts>
+    <text name="HomePage" value="Головна" />
+    <text name="About" value="Про систему" />
+    <text name="WellcomeMessage" value="Ласкаво просимо до Polex!" />
+
+    <text name="FormIsNotValidMessage" value="Знайдено помилки. Будь ласка, виправте." />
+    <text name="TenantNameCanNotBeEmpty" value="Вкажіть назву організації" />
+
+    <text name="InvalidUserNameOrPassword" value="Неправильне ім'я користувача або пароль" />
+    <text name="ThereIsNoTenantDefinedWithName{0}" value="Не знайдено організації з назвою {0}" />
+    <text name="TenantIsNotActive" value="Організація {0} неактивна." />
+    <text name="UserIsNotActiveAndCanNotLogin" value="Користувач {0} нактивний та не може увійти до системи." />
+    <text name="PleaseEnterLoginInformation" value="Введіть інформацію для входу" />
+    <text name="TenancyName" value="Назва організації" />
+    <text name="UserNameOrEmail" value="Імя користувача або email" />
+    <text name="Password" value="Пароль" />
+    <text name="RememberMe" value="Запам'ятати мене" />
+    <text name="LogIn" value="Вхід" />
+
+    <text name="LoginFailed" value="Вхід неуспішний!" />
+
+    <text name="NameSurname" value="Ім'я" />
+    <text name="UserName" value="Ім'я користувача" />
+    <text name="Name" value="Ім'я" />
+    <text name="Surname" value="Фамілія" />
+    <text name="EmailAddress" value="Email адрес" />
+
+    <text name="Tenants" value="Організації" />
+    <text name="SavedSuccessfully" value="Збережено успішно" />
+    <text name="CreateNewTenant" value="Створити нову" />
+    <text name="TenantProperties" value="Параметри організації" />
+    <text name="AdminEmailAddress" value="Email адрес адміністратора" />
+    <text name="Save" value="Зберігти" />
+    <text name="Cancel" value="Скасувати" />
+    <text name="TenantName_Regex_Description" value="Імя організації має починатися з букви і мати якнайменше 2 символи (букви, цифри, риску, підкреслювання)." />
+    <text name="DefaultPasswordIs" value="Пароль за замовчуванням {0}" />
+    <text name="CanBeEmptyToLoginAsHost" value="Може не заповнюватись." />
+    <text name="Register" value="Реєстрація" />
+    <text name="OrLoginWith" value="Або увійти з використанням" />
+    <text name="WaitingForActivationMessage" value="Ваш обліковий запис буде активовано адміністратором системи." />
+    <text name="TenantSelection" value="Вибір організації" />
+    <text name="TenantSelection_Detail" value="Виберіть одну з організацій." />
+    <text name="Logout" value="Вийти" />
+    <text name="Properties" value="Властивості" />
+    <text name="Actions" value="Дії" />
+    <text name="CreationTime" value="Дата створення" />
+    <text name="CreatorUserName" value="Користувач" />
+    <text name="LastModificationTime" value="Дата модифікації" />
+    <text name="LastModifierUserName" value="Користувач" />
+
+    <text name="Delete" value="Видалити" />
+
+    <text name="RegisterFormUserNameInvalidMessage">Please dont enter an email address for username.</text>
+
+    <text name="DatabaseConnectionString" value="Строка з'єднання з базою" />
+    <text name="Users" value="Користувачі" />
+    <text name="IsActiveUser" value="Активний" />
+    <text name="FullName" value="Повне ім'я" />
+    <text name="CreateNewUser" value="Створити нового" />
+    <text name="Yes" value="Так" />
+    <text name="No" value="Ні" />
+    <text name="Optional" value="Необов'язково" />
+  </texts>
+</localizationDictionary>
