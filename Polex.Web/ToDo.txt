@@ -1,7 +1,10 @@
-﻿- edit user
+﻿- use bootstrap-material-design
+	- use alert from that lib
+	- use popup message from that lib if there is one
+	- do I need bootstrap.min.js?
+	- fonts and icons are now being downloaded from google cdn, maybe need to make a local copy
+- edit user
 - delete user
 - change user password
 - use angular-moment to format dates
-- use bootstrap-material-design
-	- use alert from that lib
-	- use popup message from that lib if there is one
+- remove 'about' from admin view

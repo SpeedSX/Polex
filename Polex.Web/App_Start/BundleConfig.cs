@@ -36,6 +36,7 @@ namespace Polex.Web
                         "~/Scripts/jquery-ui-1.11.4.min.js",
 
                         "~/Scripts/bootstrap.min.js",
+                        "~/Scripts/ripples.min.js",
                         "~/Scripts/material.min.js",
 
                         "~/Scripts/moment-with-locales.min.js",
