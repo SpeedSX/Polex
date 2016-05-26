@@ -1,5 +1,7 @@
 ﻿- edit user
-- delete tenant
+- delete user
 - change user password
 - use angular-moment to format dates
 - use bootstrap-material-design
+	- use alert from that lib
+	- if not: buttons in sweet-alert and bootstrap theme are different

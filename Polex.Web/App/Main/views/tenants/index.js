@@ -43,7 +43,6 @@
 
             vm.deleteTenant = function(tenant) {
                 sweetAlert({
-                    //title: App.localize("DeleteTenantConfirmationTitle"),
                     title: '',
                     text: App.localize("DeleteTenantConfirmationText"),
                     type: "warning",
