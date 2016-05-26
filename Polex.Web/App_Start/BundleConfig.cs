@@ -14,7 +14,9 @@ namespace Polex.Web
             bundles.Add(
                 new StyleBundle("~/Bundles/App/vendor/css")
                     .Include("~/Content/themes/base/all.css", new CssRewriteUrlTransform())
-                    .Include("~/Content/bootstrap-cosmo.min.css", new CssRewriteUrlTransform())
+                    .Include("~/Content/bootstrap.min.css", new CssRewriteUrlTransform())
+                    .Include("~/Content/bootstrap-material-design.min.css", new CssRewriteUrlTransform())
+                    .Include("~/Content/ripples.min.css", new CssRewriteUrlTransform())
                     .Include("~/Content/toastr.min.css", new CssRewriteUrlTransform())
                     .Include("~/Scripts/sweetalert/sweet-alert.css", new CssRewriteUrlTransform())
                     .Include("~/Content/flags/famfamfam-flags.css", new CssRewriteUrlTransform())
@@ -34,6 +36,7 @@ namespace Polex.Web
                         "~/Scripts/jquery-ui-1.11.4.min.js",
 
                         "~/Scripts/bootstrap.min.js",
+                        "~/Scripts/material.min.js",
 
                         "~/Scripts/moment-with-locales.min.js",
                         "~/Scripts/jquery.validate.min.js",

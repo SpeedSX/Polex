@@ -34,11 +34,10 @@ body {
   left: 2em;
   opacity: 0;
 }
-.dropdown-menu > li > a {
-  text-decoration: none;
+/*.dropdown-menu > li > a {
+    text-decoration: none;
 }
-.btn-primary,
-.navbar-inverse {
-  background-color: #0054a6 !important;
-}
+.btn-primary, .navbar-inverse {
+    background-color: #0054a6 !important;
+}*/
 /*# sourceMappingURL=main.css.map */

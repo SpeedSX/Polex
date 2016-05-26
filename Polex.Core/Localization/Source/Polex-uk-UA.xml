@@ -25,13 +25,13 @@
     <text name="UserName" value="Ім'я користувача" />
     <text name="Name" value="Ім'я" />
     <text name="Surname" value="Фамілія" />
-    <text name="EmailAddress" value="Email адрес" />
+    <text name="EmailAddress" value="Email адреса" />
 
     <text name="Tenants" value="Організації" />
     <text name="SavedSuccessfully" value="Збережено успішно" />
     <text name="CreateNewTenant" value="Створити нову" />
     <text name="TenantProperties" value="Параметри організації" />
-    <text name="AdminEmailAddress" value="Email адрес адміністратора" />
+    <text name="AdminEmailAddress" value="Email адреса адміністратора" />
     <text name="Save" value="Зберігти" />
     <text name="Cancel" value="Скасувати" />
     <text name="TenantName_Regex_Description" value="Імя організації має починатися з букви і мати якнайменше 2 символи (букви, цифри, риску, підкреслювання)." />
