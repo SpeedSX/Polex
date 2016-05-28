@@ -28,11 +28,12 @@
     <text name="EmailAddress" value="Email адреса" />
 
     <text name="Tenants" value="Організації" />
+    <text name="TenancyNameColumn" value="Назва" />
     <text name="SavedSuccessfully" value="Збережено успішно" />
-    <text name="CreateNewTenant" value="Створити нову" />
+    <text name="CreateNewTenant" value="Нова організація" />
     <text name="TenantProperties" value="Параметри організації" />
     <text name="AdminEmailAddress" value="Email адреса адміністратора" />
-    <text name="Save" value="Зберігти" />
+    <text name="Save" value="Зберегти" />
     <text name="Cancel" value="Скасувати" />
     <text name="TenantName_Regex_Description" value="Імя організації має починатися з букви і мати якнайменше 2 символи (букви, цифри, риску, підкреслювання)." />
     <text name="DefaultPasswordIs" value="Пароль за замовчуванням {0}" />
@@ -62,7 +63,7 @@
     <text name="Users" value="Користувачі" />
     <text name="IsActive" value="Активний" />
     <text name="FullName" value="Повне ім'я" />
-    <text name="CreateNewUser" value="Створити нового" />
+    <text name="CreateNewUser" value="Новий користувач" />
     <text name="Yes" value="Так" />
     <text name="No" value="Ні" />
     <text name="Optional" value="Необов'язково" />

@@ -37,7 +37,9 @@ body {
 /*.dropdown-menu > li > a {
     text-decoration: none;
 }
-.btn-primary, .navbar-inverse {
-    background-color: #0054a6 !important;
-}*/
+.btn-primary, 
+    */
+.navbar-inverse {
+  background-color: #009688 !important;
+}
 /*# sourceMappingURL=main.css.map */

@@ -8,28 +8,28 @@
         </div>
         <div class="modal-body">
 
-            <div class="form-group">
-                <label>@L("UserName")</label>
+            <div class="form-group label-floating">
+                <label class="control-label">@L("UserName")</label>
                 <input class="form-control" type="text" name="TenancyName" ng-model="vm.user.userName" required maxlength="@AbpUserBase.MaxUserNameLength">
             </div>
 
-            <div class="form-group">
-                <label>@L("Name")</label>
+            <div class="form-group label-floating">
+                <label class="control-label">@L("Name")</label>
                 <input type="text" name="Name" class="form-control" ng-model="vm.user.name" required maxlength="@Polex.Users.User.MaxNameLength">
             </div>
 
-            <div class="form-group">
-                <label>@L("Surname")</label>
+            <div class="form-group label-floating">
+                <label class="control-label">@L("Surname")</label>
                 <input type="text" name="Surname" class="form-control" ng-model="vm.user.surname" required maxlength="@Polex.Users.User.MaxSurnameLength">
             </div>
 
-            <div class="form-group">
-                <label>@L("EmailAddress")</label>
+            <div class="form-group label-floating">
+                <label class="control-label">@L("EmailAddress")</label>
                 <input type="email" name="EmailAddress" class="form-control" ng-model="vm.user.emailAddress" required maxlength="@Polex.Users.User.MaxEmailAddressLength">
             </div>
 
-            <div class="form-group">
-                <label>@L("Password")</label>
+            <div class="form-group label-floating">
+                <label class="control-label">@L("Password")</label>
                 <input type="password" name="Password" class="form-control" ng-model="vm.user.password" maxlength="@Polex.Users.User.MaxPlainPasswordLength">
             </div>
 
@@ -42,7 +42,7 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-default" ng-click="vm.cancel()">@L("Cancel")</button>
-            <button type="submit" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="userCreateForm.$invalid"><i class="fa fa-save"></i> <span>@L("Save")</span></button>
+            <button type="submit" class="btn btn-primary" ng-click="vm.save()" ng-disabled="userCreateForm.$invalid"><i class="fa fa-save"></i> <span>@L("Save")</span></button>
         </div>
     </form>
 </div>

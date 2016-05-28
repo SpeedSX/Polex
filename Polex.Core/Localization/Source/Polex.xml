@@ -28,8 +28,9 @@
     <text name="EmailAddress" value="Email address" />
 
     <text name="Tenants" value="Tenants" />
+    <text name="TenancyNameColumn" value="Tenancy name" />
     <text name="SavedSuccessfully" value="Saved successfully" />
-    <text name="CreateNewTenant" value="Create new tenant" />
+    <text name="CreateNewTenant" value="New tenant" />
     <text name="TenantProperties" value="Tenant properties" />
     <text name="AdminEmailAddress" value="Admin email address" />
     <text name="Save" value="Save" />
@@ -61,7 +62,7 @@
     <text name="Users" value="Users" />
     <text name="IsActive" value="Is active" />
     <text name="FullName" value="Full name" />
-    <text name="CreateNewUser" value="Create new user" />
+    <text name="CreateNewUser" value="New user" />
     <text name="Yes" value="Yes" />
     <text name="No" value="No" />
     <text name="Optional" value="Optional" />

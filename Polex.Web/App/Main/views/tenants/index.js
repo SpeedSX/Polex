@@ -42,24 +42,27 @@
             };
 
             vm.deleteTenant = function(tenant) {
-                sweetAlert({
-                    title: '',
-                    text: App.localize("DeleteTenantConfirmationText"),
-                    type: "warning",
-                    showCancelButton: true,
-                    confirmButtonColor: "#0054a6",
-                    confirmButtonText: App.localize("Yes"),
-                    cancelButtonText: App.localize("Cancel")
-                }, function () {
-                    abp.ui.setBusy();
-                    tenantService.deleteTenant(tenant.id)
-                        .success(function () {
-                            abp.notify.info(App.localize('DeletedSuccessfully'));
-                        }).finally(function() {
-                            abp.ui.clearBusy();
-                            getTenants();
-                        });
-                });
+                abp.message.confirm(
+                    App.localize("DeleteTenantConfirmationText"),
+                    ' ',
+                    function (btn) {
+                        if (btn) {
+                            abp.ui.setBusy();
+                            tenantService.deleteTenant(tenant.id)
+                                .success(function() {
+                                    abp.notify.info(App.localize('DeletedSuccessfully'));
+                                }).finally(function() {
+                                    abp.ui.clearBusy();
+                                    getTenants();
+                                });
+                        }
+                    }
+                    //type: "warning",
+                    //showCancelButton: true,
+                    //confirmButtonColor: "#009688",
+                    //confirmButtonText: App.localize("Yes"),
+                    //cancelButtonText: App.localize("Cancel")
+                );
             };
 
             $scope.formatDate = function(dateString) {

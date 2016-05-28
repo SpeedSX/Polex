@@ -36,6 +36,7 @@ namespace Polex.Web
                         "~/Scripts/jquery-ui-1.11.4.min.js",
 
                         "~/Scripts/bootstrap.min.js",
+                        "~/Scripts/arrive.min.js",
                         "~/Scripts/ripples.min.js",
                         "~/Scripts/material.min.js",
 
@@ -62,6 +63,7 @@ namespace Polex.Web
                         "~/Abp/Framework/scripts/libs/abp.spin.js",
                         "~/Abp/Framework/scripts/libs/abp.sweet-alert.js",
                         "~/Abp/Framework/scripts/libs/angularjs/abp.ng.js",
+                        "~/Abp/Framework/scripts/libs/abp.material.js",
 
                         "~/Scripts/jquery.signalR-2.2.0.min.js"
                     )
