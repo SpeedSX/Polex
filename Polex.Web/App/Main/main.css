@@ -42,4 +42,7 @@ body {
 .navbar-inverse {
   background-color: #009688 !important;
 }
+.swal2-modal {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
+}
 /*# sourceMappingURL=main.css.map */

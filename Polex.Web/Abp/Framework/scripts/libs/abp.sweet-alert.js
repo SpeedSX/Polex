@@ -10,7 +10,9 @@
     abp.libs.sweetAlert = {
         config: {
             'default': {
-
+                animation: false,
+                buttonsStyling: false,
+                cancelButtonClass: 'btn btn-default'
             },
             info: {
                 type: 'info'
@@ -31,9 +33,8 @@
                 cancelButtonText: 'Cancel',
                 //confirmButtonColor: "#009688",
                 confirmButtonText: 'Yes',
-                buttonsStyling: false,
                 confirmButtonClass: 'btn btn-warning',
-                cancelButtonClass: 'btn btn-default'
+                showCloseButton: true
             }
         }
     };

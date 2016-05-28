@@ -285,6 +285,8 @@
     <Content Include="Abp\Framework\scripts\libs\abp.sweet-alert.js" />
     <Content Include="Abp\Framework\scripts\libs\abp.toastr.js" />
     <Content Include="Abp\Framework\scripts\libs\angularjs\abp.ng.js" />
+    <Content Include="Content\sweetalert2.css" />
+    <Content Include="Content\sweetalert2.min.css" />
     <Content Include="Scripts\arrive.js" />
     <Content Include="Scripts\arrive.min.js" />
     <Content Include="Abp\Framework\scripts\libs\requirejs\plugins\service.js" />
@@ -1226,6 +1228,7 @@
     <Content Include="Scripts\others\spinjs\spin.js" />
     <Content Include="Scripts\ripples.js" />
     <Content Include="Scripts\ripples.min.js" />
+    <Content Include="Scripts\sweetalert2\sweetalert2.min.js" />
     <Content Include="Scripts\sweetalert\ie9.css" />
     <Content Include="Scripts\sweetalert\sweet-alert.css" />
     <Content Include="Scripts\sweetalert\sweet-alert.html" />

@@ -57,11 +57,6 @@
                                 });
                         }
                     }
-                    //type: "warning",
-                    //showCancelButton: true,
-                    //confirmButtonColor: "#009688",
-                    //confirmButtonText: App.localize("Yes"),
-                    //cancelButtonText: App.localize("Cancel")
                 );
             };
 
