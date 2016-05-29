@@ -12,7 +12,8 @@
             'default': {
                 animation: false,
                 buttonsStyling: false,
-                cancelButtonClass: 'btn btn-default'
+                cancelButtonClass: 'btn btn-default',
+                confirmButtonClass: 'btn btn-default'
             },
             info: {
                 type: 'info'
@@ -108,8 +109,9 @@
 
     abp.event.on('abp.dynamicScriptsInitialized', function () {
         abp.libs.sweetAlert.config.confirm.title = abp.localization.abpWeb('AreYouSure');
-        abp.libs.sweetAlert.config.confirm.cancelButtonText = abp.localization.localize('Cancel', 'Polex');
-        abp.libs.sweetAlert.config.confirm.confirmButtonText = abp.localization.localize('Yes', 'Polex');
+        abp.libs.sweetAlert.config.confirm.cancelButtonText = App.localize('Cancel');
+        abp.libs.sweetAlert.config.confirm.confirmButtonText = App.localize('Yes');
+        abp.libs.sweetAlert.config.error.confirmButtonText = App.localize('Yes');
     });
 
 })(jQuery);

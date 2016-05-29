@@ -66,5 +66,9 @@
     <text name="Yes" value="Yes" />
     <text name="No" value="No" />
     <text name="Optional" value="Optional" />
+
+    <text name="Ajax request did not succeed!" value="Ajax request did not succeed!" />
+    <text name='Error detail not sent by server.' value="Error detail not sent by server." />
+
   </texts>
 </localizationDictionary>

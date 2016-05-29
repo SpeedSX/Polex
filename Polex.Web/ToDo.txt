@@ -1,9 +1,7 @@
-﻿- use bootstrap-material-design
-	- re-implement abp.message to show messages using bootstrap modal
-	- do I need bootstrap.min.js?
-	- fonts and icons are now being downloaded from google cdn, maybe need to make a local copy
+﻿- fonts and icons are now being downloaded from google cdn, maybe need to make a local copy
 - edit user
 - delete user
 - change user password
 - use angular-moment to format dates
 - remove 'about' from admin view
+- preparing of release version (minification etc.)
