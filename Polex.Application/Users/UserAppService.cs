@@ -4,6 +4,7 @@ using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
+using AutoMapper;
 using Polex.Authorization;
 using Polex.Users.Dto;
 using Microsoft.AspNet.Identity;
@@ -44,6 +45,12 @@ namespace Polex.Users
             return new ListResultOutput<UserListDto>(
                 users.MapTo<List<UserListDto>>()
                 );
+        }
+
+        public async Task<UserDto> GetUser(long id)
+        {
+            var user = await _userRepository.GetAsync(id);
+            return user.MapTo<UserDto>();
         }
 
         public async Task CreateUser(CreateUserInput input)

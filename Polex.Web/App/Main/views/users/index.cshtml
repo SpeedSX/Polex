@@ -14,7 +14,7 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="user in vm.users">
-                        <td>{{user.userName}}</td>
+                        <td><a ng-href="#/users/{{user.id}}">{{user.userName}}</a></td>
                         <td>{{user.fullName}}</td>
                         <td>{{user.emailAddress}}</td>
                         <td>{{user.isActive ? '@L("Yes")' : '@L("No")'}}</td>

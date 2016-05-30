@@ -14,5 +14,7 @@ namespace Polex.Users
         Task<ListResultOutput<UserListDto>> GetUsers();
 
         Task CreateUser(CreateUserInput input);
+
+        Task<UserDto> GetUser(long id);
     }
 }

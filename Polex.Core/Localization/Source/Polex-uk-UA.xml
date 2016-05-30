@@ -21,6 +21,7 @@
 
     <text name="LoginFailed" value="Вхід неуспішний!" />
 
+    <text name="UserDetails" value="Параметри користувача" />
     <text name="NameSurname" value="Ім'я" />
     <text name="UserName" value="Ім'я користувача" />
     <text name="Name" value="Ім'я" />

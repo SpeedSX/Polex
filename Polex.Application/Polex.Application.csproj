@@ -106,6 +106,7 @@
     <Compile Include="Roles\IRoleAppService.cs" />
     <Compile Include="Roles\Dto\UpdateRolePermissionsInput.cs" />
     <Compile Include="Users\Dto\CreateUserInput.cs" />
+    <Compile Include="Users\Dto\UserDto.cs" />
     <Compile Include="Users\IUserAppService.cs" />
     <Compile Include="Roles\RoleAppService.cs" />
     <Compile Include="Sessions\Dto\GetCurrentLoginInformationsOutput.cs" />

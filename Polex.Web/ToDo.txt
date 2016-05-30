@@ -3,5 +3,4 @@
 - delete user
 - change user password
 - use angular-moment to format dates
-- remove 'about' from admin view
-- preparing of release version (minification etc.)
+- preparing of release version (minification, templateCache etc.)
