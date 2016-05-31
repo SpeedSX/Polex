@@ -45,8 +45,6 @@
         @Html.IncludeScript("~/Scripts/others/html5shiv.js")
         @Html.IncludeScript("~/Scripts/others/respond.min.js")
     <![endif]-->
-
-
     @Html.IncludeScript("~/Abp/Framework/scripts/utils/ie10fix.js")
     @Html.IncludeScript("~/Scripts/modernizr-2.8.3.js")
 
@@ -55,6 +53,7 @@
     @Html.IncludeScript("~/Scripts/jquery-ui-1.11.4.min.js")
     @Html.IncludeScript("~/Scripts/bootstrap.min.js")
     @Html.IncludeScript("~/Scripts/ripples.min.js")
+    @Html.IncludeScript("~/Scripts/arrive.min.js")
     @Html.IncludeScript("~/Scripts/material.min.js")
 
     @Html.IncludeScript("~/Scripts/jquery.validate.min.js")
@@ -70,6 +69,8 @@
     @Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.blockUI.js")
     @Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.spin.js")
     @Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.sweet-alert.js")
+    @Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.material.js")
+
 
     <!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->
     <script src="~/api/AbpServiceProxies/GetAll?v=@(Clock.Now.Ticks)"></script>

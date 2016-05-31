@@ -286,6 +286,8 @@
     <Content Include="Abp\Framework\scripts\libs\abp.toastr.js" />
     <Content Include="Abp\Framework\scripts\libs\angularjs\abp.ng.js" />
     <Content Include="App\Main\views\users\details.js" />
+    <Content Include="Content\material-icons.css" />
+    <Content Include="Content\roboto.css" />
     <Content Include="Content\sweetalert2.css" />
     <Content Include="Content\sweetalert2.min.css" />
     <Content Include="Scripts\arrive.js" />
@@ -457,6 +459,11 @@
     <Content Include="Content\ripples.css.map" />
     <Content Include="Content\ripples.min.css.map" />
     <Content Include="App\Main\views\users\details.cshtml" />
+    <Content Include="fonts\MaterialIcons-Regular.woff2" />
+    <Content Include="fonts\Roboto-Light-CE.woff2" />
+    <Content Include="fonts\Roboto-Light-Cyr.woff2" />
+    <Content Include="fonts\Roboto-Light-Latin.woff2" />
+    <Content Include="fonts\Roboto-Light-LatinExt.woff2" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <None Include="Scripts\jquery-2.2.0-vsdoc.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />

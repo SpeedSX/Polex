@@ -14,6 +14,8 @@ namespace Polex.Web
             bundles.Add(
                 new StyleBundle("~/Bundles/App/vendor/css")
                     .Include("~/Content/themes/base/all.css", new CssRewriteUrlTransform())
+                    //.Include("~/Content/roboto.css", new CssRewriteUrlTransform())  // use in offline mode
+                    //.Include("~/Content/material-icons.css", new CssRewriteUrlTransform()) // use in offline mode
                     .Include("~/Content/bootstrap.min.css", new CssRewriteUrlTransform())
                     .Include("~/Content/bootstrap-material-design.min.css", new CssRewriteUrlTransform())
                     .Include("~/Content/ripples.min.css", new CssRewriteUrlTransform())
