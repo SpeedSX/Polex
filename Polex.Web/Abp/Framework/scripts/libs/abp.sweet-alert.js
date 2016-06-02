@@ -109,9 +109,10 @@
 
     abp.event.on('abp.dynamicScriptsInitialized', function () {
         abp.libs.sweetAlert.config.confirm.title = abp.localization.abpWeb('AreYouSure');
-        abp.libs.sweetAlert.config.confirm.cancelButtonText = App.localize('Cancel');
-        abp.libs.sweetAlert.config.confirm.confirmButtonText = App.localize('Yes');
-        abp.libs.sweetAlert.config.error.confirmButtonText = App.localize('Yes');
+        var localize = abp.localization.getSource('Polex');
+        abp.libs.sweetAlert.config.confirm.cancelButtonText = localize('Cancel');
+        abp.libs.sweetAlert.config.confirm.confirmButtonText = localize('Yes');
+        abp.libs.sweetAlert.config.error.confirmButtonText = localize('Yes');
     });
 
 })(jQuery);
