@@ -1,5 +1,4 @@
-﻿- fonts and icons are now being downloaded from google cdn, maybe need to make a local copy
-- edit user
+﻿- edit user
 - delete user
 - change user password
 - use angular-moment to format dates

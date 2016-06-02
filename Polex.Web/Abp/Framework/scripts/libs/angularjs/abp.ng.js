@@ -126,6 +126,25 @@
         }
     ]);
 
+    abpModule.directive("ngModel", ["$timeout", function ($timeout) {
+        return {
+            restrict: 'A',
+            priority: -1, // lower priority than built-in ng-model so it runs first
+            link: function (scope, element, attr) {
+                scope.$watch(attr.ngModel, function (value) {
+                    $timeout(function () {
+                        if (value) {
+                            element.trigger("change");
+                        } else if (element.attr('placeholder') === undefined) {
+                            if (!element.is(":focus"))
+                                element.trigger("blur");
+                        }
+                    });
+                });
+            }
+        };
+    }]);
+
     function endsWith(str, suffix) {
         if (suffix.length > str.length) {
             return false;
