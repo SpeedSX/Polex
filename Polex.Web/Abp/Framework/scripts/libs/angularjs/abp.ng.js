@@ -126,6 +126,7 @@
         }
     ]);
 
+    // this is introduced to avoid problems with rendering of inputs when we move from editing page back and forward
     abpModule.directive("ngModel", ["$timeout", function ($timeout) {
         return {
             restrict: 'A',

@@ -30,7 +30,7 @@
 
     <text name="Tenants" value="Організації" />
     <text name="TenancyNameColumn" value="Назва" />
-    <text name="SavedSuccessfully" value="Збережено успішно" />
+    <text name="SavedSuccessfully" value="Зміни збережено" />
     <text name="CreateNewTenant" value="Нова організація" />
     <text name="TenantProperties" value="Параметри організації" />
     <text name="AdminEmailAddress" value="Email адреса адміністратора" />
@@ -53,7 +53,7 @@
     <text name="LastModifierUserName" value="Користувач" />
     <text name="DeleteTenantConfirmationTitle" value="Видалення організації" />
     <text name="DeleteTenantConfirmationText" value="Ви впевнені, що бажаєте видалити організацію?" />
-    <text name="DeletedSuccessfully" value="Видалено успішно" />
+    <text name="DeletedSuccessfully" value="Запис видалено" />
     <text name="IsActiveTenant" value="Активна" />
 
     <text name="Delete" value="Видалити" />

@@ -5,13 +5,13 @@ using Abp.Authorization;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using AutoMapper;
+using Nito.AsyncEx;
 using Polex.Authorization;
 using Polex.Users.Dto;
 using Microsoft.AspNet.Identity;
 
 namespace Polex.Users
 {
-    /* THIS IS JUST A SAMPLE. */
     [AbpAuthorize(PermissionNames.Pages_Users)]
     public class UserAppService : PolexAppServiceBase, IUserAppService
     {
@@ -53,7 +53,7 @@ namespace Polex.Users
             return user.MapTo<UserDto>();
         }
 
-        public async Task CreateUser(CreateUserInput input)
+        public async Task CreateUser(CreateOrUpdateUserInput input)
         {
             var user = input.MapTo<User>();
 
@@ -62,6 +62,16 @@ namespace Polex.Users
             user.IsEmailConfirmed = true;
 
             CheckErrors(await UserManager.CreateAsync(user));
+        }
+
+        public async Task UpdateUser(CreateOrUpdateUserInput input)
+        {
+            var user = await UserManager.GetUserByIdAsync(input.Id);
+            user = Mapper.Map(input, user);
+
+            CheckErrors(await UserManager.UpdateAsync(user));
+
+            await CurrentUnitOfWork.SaveChangesAsync();
         }
     }
 }

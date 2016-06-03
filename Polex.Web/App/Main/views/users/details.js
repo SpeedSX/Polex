@@ -25,12 +25,12 @@
                 userService.updateUser(vm.user)
                     .success(function () {
                         abp.notify.info(App.localize('SavedSuccessfully'));
-                        //TODO: redirect to list
+                        $state.transitionTo('users');
                     });
             };
 
             vm.cancel = function () {
-                //TODO: redirect to list
+                $state.transitionTo('users');
             };
 
             loadUser();

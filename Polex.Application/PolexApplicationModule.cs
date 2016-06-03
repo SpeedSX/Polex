@@ -4,6 +4,8 @@ using Abp.Modules;
 using AutoMapper;
 using Polex.MultiTenancy;
 using Polex.MultiTenancy.Dto;
+using Polex.Users;
+using Polex.Users.Dto;
 
 namespace Polex
 {
@@ -17,6 +19,7 @@ namespace Polex
 
         public override void PostInitialize()
         {
+            Mapper.CreateMap<CreateOrUpdateUserInput, User>().ForMember(x => x.Password, x => x.Ignore());
             /*Mapper.CreateMap<Tenant, TenantListDto>().AfterMap((t, dto) =>
             {
                 dto.CreatorUserName = t.CreatorUser != null ? t.CreatorUser.Name : null;

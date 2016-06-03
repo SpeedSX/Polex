@@ -1,4 +1,5 @@
-﻿- edit user
+﻿- edit user - cancel button does not work
+- use same dialog for create and edit user
 - delete user
 - change user password
 - use angular-moment to format dates
