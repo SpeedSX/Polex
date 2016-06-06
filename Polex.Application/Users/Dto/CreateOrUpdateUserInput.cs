@@ -1,10 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using Abp.Application.Services.Dto;
 using Abp.Auditing;
 using Abp.Authorization.Users;
 using Abp.AutoMapper;
-using AutoMapper;
 
 namespace Polex.Users.Dto
 {

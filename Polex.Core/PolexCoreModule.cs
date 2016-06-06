@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using Abp.Localization.Dictionaries;
 using Abp.Localization.Dictionaries.Xml;
+using Abp.Localization.Sources;
 using Abp.Modules;
 using Abp.Zero;
 using Abp.Zero.Configuration;
@@ -36,6 +37,14 @@ namespace Polex
                         )
                     )
                 );
+            Configuration.Localization.Sources.Extensions.Add(
+                new LocalizationSourceExtensionInfo("AbpWeb",
+                    new XmlEmbeddedFileLocalizationDictionaryProvider(
+                        Assembly.GetExecutingAssembly(), 
+                        "Polex.Localization.Extensions"
+                        )
+                    )
+    );
 
             AppRoleConfig.Configure(Configuration.Modules.Zero().RoleManagement);
 

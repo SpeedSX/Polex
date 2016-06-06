@@ -1,4 +1,5 @@
-﻿- edit user - cancel button does not work
+﻿- try to rename uk-UA into uk.
+- localize error for EmailAddress attribute and others
 - use same dialog for create and edit user
 - delete user
 - change user password

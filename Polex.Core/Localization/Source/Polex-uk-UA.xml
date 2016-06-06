@@ -25,7 +25,7 @@
     <text name="NameSurname" value="Ім'я" />
     <text name="UserName" value="Ім'я користувача" />
     <text name="Name" value="Ім'я" />
-    <text name="Surname" value="Фамілія" />
+    <text name="Surname" value="Прізвище" />
     <text name="EmailAddress" value="Email адреса" />
 
     <text name="Tenants" value="Організації" />
@@ -36,7 +36,7 @@
     <text name="AdminEmailAddress" value="Email адреса адміністратора" />
     <text name="Save" value="Зберегти" />
     <text name="Cancel" value="Скасувати" />
-    <text name="TenantName_Regex_Description" value="Імя організації має починатися з букви і мати якнайменше 2 символи (букви, цифри, риску, підкреслювання)." />
+    <text name="TenantName_Regex_Description" value="Ім'я організації має починатися з букви і мати якнайменше 2 символи (букви, цифри, риску, підкреслювання)." />
     <text name="DefaultPasswordIs" value="Пароль за замовчуванням {0}" />
     <text name="CanBeEmptyToLoginAsHost" value="Може не заповнюватись." />
     <text name="Register" value="Реєстрація" />

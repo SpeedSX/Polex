@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
@@ -69,9 +70,12 @@ namespace Polex.Users
             var user = await UserManager.GetUserByIdAsync(input.Id);
             user = Mapper.Map(input, user);
 
-            CheckErrors(await UserManager.UpdateAsync(user));
+            if (!String.IsNullOrEmpty(user.Password)) // password is ignored in mapping, check it separately
+            {
+                user.Password = new PasswordHasher().HashPassword(input.Password);
+            }
 
-            await CurrentUnitOfWork.SaveChangesAsync();
+            CheckErrors(await UserManager.UpdateAsync(user));
         }
     }
 }

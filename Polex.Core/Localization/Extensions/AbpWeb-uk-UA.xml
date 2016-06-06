@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="uk-UA">
+  <texts>
+    <text name="InternalServerError" value="Упс, кажется, проблема на сервере." />
+    <text name="ValidationError" value="Введено некоректні дані." />
+  </texts>
+</localizationDictionary>
