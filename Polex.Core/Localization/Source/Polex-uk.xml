@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<localizationDictionary culture="uk-UA">
+<localizationDictionary culture="uk">
   <texts>
     <text name="HomePage" value="Головна" />
     <text name="About" value="Про систему" />

@@ -23,7 +23,7 @@ namespace Polex.Migrations.SeedData
 //                new ApplicationLanguage(null, "fr", "Français", "famfamfam-flag-fr"),
 //                new ApplicationLanguage(null, "it", "Italiano", "famfamfam-flag-it"),
 //                new ApplicationLanguage(null, "ja", "日本語", "famfamfam-flag-jp"),
-                new ApplicationLanguage(null, "uk-UA", "Українська", "famfamfam-flag-ua")
+                new ApplicationLanguage(null, "uk", "Українська", "famfamfam-flag-ua")
             };
         }
 
