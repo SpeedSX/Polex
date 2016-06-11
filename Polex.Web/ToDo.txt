@@ -1,5 +1,4 @@
-﻿- localize error for EmailAddress and other attribute
-- use same dialog for create and edit user
+﻿- use same dialog for create and edit user
 - delete user
 - change user password
 - use angular-moment to format dates
