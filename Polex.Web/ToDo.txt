@@ -1,5 +1,4 @@
-﻿- try to rename uk-UA into uk.
-- localize error for EmailAddress attribute and others
+﻿- localize error for EmailAddress and other attribute
 - use same dialog for create and edit user
 - delete user
 - change user password
