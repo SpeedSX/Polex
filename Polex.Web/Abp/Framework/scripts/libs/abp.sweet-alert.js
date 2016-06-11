@@ -109,10 +109,9 @@
 
     abp.event.on('abp.dynamicScriptsInitialized', function () {
         abp.libs.sweetAlert.config.confirm.title = abp.localization.abpWeb('AreYouSure');
-        var localize = abp.localization.getSource('Polex');
-        abp.libs.sweetAlert.config.confirm.cancelButtonText = localize('Cancel');
-        abp.libs.sweetAlert.config.confirm.confirmButtonText = localize('Yes');
-        abp.libs.sweetAlert.config.error.confirmButtonText = localize('Yes');
+        abp.libs.sweetAlert.config.confirm.cancelButtonText = abp.localization.abpWeb('Cancel');
+        abp.libs.sweetAlert.config.confirm.confirmButtonText = abp.localization.abpWeb('Yes');
+        abp.libs.sweetAlert.config.error.confirmButtonText = abp.localization.abpWeb('OK');
     });
 
 })(jQuery);
