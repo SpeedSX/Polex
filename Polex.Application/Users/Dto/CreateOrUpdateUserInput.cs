@@ -7,8 +7,10 @@ using Abp.AutoMapper;
 namespace Polex.Users.Dto
 {
     [AutoMap(typeof(User))]
-    public class CreateUserInput : IInputDto
+    public class CreateOrUpdateUserInput : IInputDto
     {
+        public long Id { get; set; }
+
         [Required]
         [StringLength(AbpUserBase.MaxUserNameLength)]
         public string UserName { get; set; }
@@ -26,7 +28,7 @@ namespace Polex.Users.Dto
         [StringLength(AbpUserBase.MaxEmailAddressLength)]
         public string EmailAddress { get; set; }
 
-        [Required]
+        //[Required]
         [StringLength(User.MaxPlainPasswordLength)]
         [DisableAuditing]
         public string Password { get; set; }

@@ -22,6 +22,7 @@ Thumbs.db
 [Bb]in
 [Dd]ebug*/
 packages/
+Zero
 *.lib
 *.sbr
 obj/

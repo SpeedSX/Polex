@@ -10,7 +10,7 @@
         }
 
         return !$.validator.methods.email.apply(this, arguments);
-    }, abp.localization.localize("RegisterFormUserNameInvalidMessage", "Polex"));
+    }, App.localize("RegisterFormUserNameInvalidMessage"));
 
     $(document).ready(function () {
         $('.register-form').validate({

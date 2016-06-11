@@ -31,10 +31,10 @@ namespace Polex.Web
             Configuration.Navigation.Providers.Add<PolexNavigationProvider>();
 
             //Configure Hangfire
-            Configuration.BackgroundJobs.UseHangfire(configuration =>
-            {
-                configuration.GlobalConfiguration.UseSqlServerStorage("Default");
-            });
+//            Configuration.BackgroundJobs.UseHangfire(configuration =>
+//            {
+//                configuration.GlobalConfiguration.UseSqlServerStorage("Default");
+//            });
         }
 
         public override void Initialize()

@@ -10,7 +10,10 @@
     abp.libs.sweetAlert = {
         config: {
             'default': {
-
+                animation: false,
+                buttonsStyling: false,
+                cancelButtonClass: 'btn btn-default',
+                confirmButtonClass: 'btn btn-default'
             },
             info: {
                 type: 'info'
@@ -29,8 +32,10 @@
                 title: 'Are you sure?',
                 showCancelButton: true,
                 cancelButtonText: 'Cancel',
-                confirmButtonColor: "#DD6B55",
-                confirmButtonText: 'Yes'
+                //confirmButtonColor: "#009688",
+                confirmButtonText: 'Yes',
+                confirmButtonClass: 'btn btn-warning',
+                showCloseButton: true
             }
         }
     };
@@ -106,6 +111,7 @@
         abp.libs.sweetAlert.config.confirm.title = abp.localization.abpWeb('AreYouSure');
         abp.libs.sweetAlert.config.confirm.cancelButtonText = abp.localization.abpWeb('Cancel');
         abp.libs.sweetAlert.config.confirm.confirmButtonText = abp.localization.abpWeb('Yes');
+        abp.libs.sweetAlert.config.error.confirmButtonText = abp.localization.abpWeb('OK');
     });
 
 })(jQuery);

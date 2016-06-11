@@ -2,7 +2,7 @@
     'use strict';
     
     var app = angular.module('app', [
-        'ngAnimate',
+        //'ngAnimate',
         'ngSanitize',
 
         'ui.router',
@@ -23,6 +23,11 @@
                     .state('users', {
                         url: '/users',
                         templateUrl: '/App/Main/views/users/index.cshtml',
+                        menu: 'Users' //Matches to name of 'Users' menu in PolexNavigationProvider
+                    })
+                    .state('userDetails', {
+                        url: '/users/:id',
+                        templateUrl: '/App/Main/views/users/details.cshtml',
                         menu: 'Users' //Matches to name of 'Users' menu in PolexNavigationProvider
                     });
                 $urlRouterProvider.otherwise('/users');

@@ -10,5 +10,9 @@ namespace Polex.MultiTenancy
         ListResultOutput<TenantListDto> GetTenants();
 
         Task CreateTenant(CreateTenantInput input);
+
+        Task UpdateTenant(UpdateTenantInput input);
+
+        Task DeleteTenant(int id);
     }
 }

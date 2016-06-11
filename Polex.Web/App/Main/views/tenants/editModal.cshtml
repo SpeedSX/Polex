@@ -1,0 +1,50 @@
+﻿@using Abp.MultiTenancy
+@using Polex.MultiTenancy
+<div>
+    <form name="tenantEditForm" role="form" novalidate class="form-validation">
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="vm.cancel()" aria-hidden="true">×</button>
+            <h4 class="modal-title">
+                <span>@L("TenantProperties")</span>
+            </h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="form-group label-floating">
+                <label class="control-label">@L("TenancyName")</label>
+                <input auto-focus class="form-control" type="text" name="TenancyName" ng-model="vm.tenant.tenancyName" required maxlength="@Tenant.MaxTenancyNameLength" ng-pattern="/@Tenant.TenancyNameRegex/" readonly="true">
+            </div>
+            <div>
+                <span class="help-block text-danger" ng-show="!tenantEditForm.TenancyName.$valid && tenantEditForm.TenancyName.$dirty">@L("TenantName_Regex_Description")</span>
+            </div>
+
+            <div class="form-group label-floating">
+                <label class="control-label">@L("Name")</label>
+                <input type="text" name="Name" class="form-control" ng-model="vm.tenant.name" required maxlength="@Tenant.MaxNameLength">
+            </div>
+            
+            <div class="form-group checkbox">
+                <label>
+                    <input type="checkbox" name="IsActive" ng-model="vm.tenant.isActive" /> @L("IsActiveTenant")
+                </label>
+            </div>
+            <!--<div class="form-group">
+                <label>@L("DatabaseConnectionString") (@L("Optional"))</label>
+                <input type="text" name="ConnectionString" class="form-control" ng-model="vm.tenant.connectionString" maxlength="@AbpTenantBase.MaxConnectionStringLength" readonly="true">
+            </div>
+
+            <div class="form-group">
+                <label>@L("AdminEmailAddress")</label>
+                <input type="email" name="AdminEmailAddress" class="form-control" ng-model="vm.tenant.adminEmailAddress" required maxlength="@Polex.Users.User.MaxEmailAddressLength" readonly="true">
+            </div>
+                
+            -->                
+                
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" ng-click="vm.cancel()">@L("Cancel")</button>
+            <button type="submit" class="btn btn-primary" ng-click="vm.save()" ng-disabled="tenantEditForm.$invalid"><i class="fa fa-save"></i> <span>@L("Save")</span></button>
+        </div>
+    </form>
+</div>

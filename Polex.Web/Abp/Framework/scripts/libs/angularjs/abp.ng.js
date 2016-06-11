@@ -8,8 +8,8 @@
 
     abp.ng.http = {
         defaultError: {
-            message: 'Ajax request did not succeed!',
-            details: 'Error detail not sent by server.'
+            message: 'Ajax request did not succeed!', // localized id
+            details: 'Error detail not sent by server.' // localized id
         },
 
         logError: function (error) {
@@ -18,9 +18,9 @@
 
         showError: function (error) {
             if (error.details) {
-                return abp.message.error(error.details, error.message || abp.ng.http.defaultError.message);
+                return abp.message.error(error.details, error.message || App.localize(abp.ng.http.defaultError.message));
             } else {
-                return abp.message.error(error.message || abp.ng.http.defaultError.message);
+                return abp.message.error(error.message || App.localize(abp.ng.http.defaultError.message));
             }
         },
 
@@ -109,8 +109,8 @@
 
                     'responseError': function (ngError) {
                         var error = {
-                            message: ngError.data || abp.ng.http.defaultError.message,
-                            details: ngError.statusText || abp.ng.http.defaultError.details,
+                            message: ngError.data || App.localize(abp.ng.http.defaultError.message),
+                            details: ngError.statusText || App.localize(abp.ng.http.defaultError.details),
                             responseError: true
                         }
 
@@ -125,6 +125,26 @@
             }]);
         }
     ]);
+
+    // this is introduced to avoid problems with rendering of inputs when we move from editing page back and forward
+    abpModule.directive("ngModel", ["$timeout", function ($timeout) {
+        return {
+            restrict: 'A',
+            priority: -1, // lower priority than built-in ng-model so it runs first
+            link: function (scope, element, attr) {
+                scope.$watch(attr.ngModel, function (value) {
+                    $timeout(function () {
+                        if (value) {
+                            element.trigger("change");
+                        } else if (element.attr('placeholder') === undefined) {
+                            if (!element.is(":focus"))
+                                element.trigger("blur");
+                        }
+                    });
+                });
+            }
+        };
+    }]);
 
     function endsWith(str, suffix) {
         if (suffix.length > str.length) {

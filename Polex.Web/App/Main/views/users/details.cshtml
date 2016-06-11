@@ -1,0 +1,44 @@
+﻿@using Abp.Authorization.Users
+<div ng-controller="app.views.users.details as vm">
+    <div class="well">
+        <form name="userEditForm" role="form" novalidate>
+            <fieldset>
+                <legend>@L("UserDetails")</legend>
+                <div class="form-group label-floating">
+                    <label class="control-label">@L("UserName")</label>
+                    <input autofocus type="text" name="UserName" class="form-control" ng-model="vm.user.userName" required maxlength="@AbpUserBase.MaxUserNameLength">
+                </div>
+
+                <div class="form-group label-floating">
+                    <label class="control-label">@L("Name")</label>
+                    <input type="text" name="Name" class="form-control" ng-model="vm.user.name" required maxlength="@Polex.Users.User.MaxNameLength">
+                </div>
+
+                <div class="form-group label-floating">
+                    <label class="control-label">@L("Surname")</label>
+                    <input type="text" name="Surname" class="form-control" ng-model="vm.user.surname" required maxlength="@Polex.Users.User.MaxSurnameLength">
+                </div>
+
+                <div class="form-group label-floating">
+                    <label class="control-label">@L("EmailAddress")</label>
+                    <input type="email" name="EmailAddress" class="form-control" ng-model="vm.user.emailAddress" required maxlength="@Polex.Users.User.MaxEmailAddressLength">
+                </div>
+
+                <div class="form-group label-floating">
+                    <label class="control-label">@L("Password")</label>
+                    <input type="password" name="Password" autocomplete="new-password" class="form-control" ng-model="vm.user.password" maxlength="@Polex.Users.User.MaxPlainPasswordLength">
+                </div>
+
+                <div class="form-group checkbox">
+                    <label>
+                        <input type="checkbox" name="IsActive" ng-model="vm.user.isActive" value="true"> @L("IsActive")
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-default" ng-click="vm.cancel()">@L("Cancel")</button>
+                    <button type="submit" class="btn btn-primary" ng-click="vm.save()" ng-disabled="userEditForm.$invalid"><i class="fa fa-save"></i><span> @L("Save")</span></button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

@@ -1,16 +1,18 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
+using AutoMapper;
+using Nito.AsyncEx;
 using Polex.Authorization;
 using Polex.Users.Dto;
 using Microsoft.AspNet.Identity;
 
 namespace Polex.Users
 {
-    /* THIS IS JUST A SAMPLE. */
     [AbpAuthorize(PermissionNames.Pages_Users)]
     public class UserAppService : PolexAppServiceBase, IUserAppService
     {
@@ -46,7 +48,13 @@ namespace Polex.Users
                 );
         }
 
-        public async Task CreateUser(CreateUserInput input)
+        public async Task<UserDto> GetUser(long id)
+        {
+            var user = await _userRepository.GetAsync(id);
+            return user.MapTo<UserDto>();
+        }
+
+        public async Task CreateUser(CreateOrUpdateUserInput input)
         {
             var user = input.MapTo<User>();
 
@@ -55,6 +63,19 @@ namespace Polex.Users
             user.IsEmailConfirmed = true;
 
             CheckErrors(await UserManager.CreateAsync(user));
+        }
+
+        public async Task UpdateUser(CreateOrUpdateUserInput input)
+        {
+            var user = await UserManager.GetUserByIdAsync(input.Id);
+            user = Mapper.Map(input, user);
+
+            if (!String.IsNullOrEmpty(user.Password)) // password is ignored in mapping, check it separately
+            {
+                user.Password = new PasswordHasher().HashPassword(input.Password);
+            }
+
+            CheckErrors(await UserManager.UpdateAsync(user));
         }
     }
 }

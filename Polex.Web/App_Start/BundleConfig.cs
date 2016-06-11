@@ -14,9 +14,13 @@ namespace Polex.Web
             bundles.Add(
                 new StyleBundle("~/Bundles/App/vendor/css")
                     .Include("~/Content/themes/base/all.css", new CssRewriteUrlTransform())
-                    .Include("~/Content/bootstrap-cosmo.min.css", new CssRewriteUrlTransform())
+                    //.Include("~/Content/roboto.css", new CssRewriteUrlTransform())  // use in offline mode
+                    //.Include("~/Content/material-icons.css", new CssRewriteUrlTransform()) // use in offline mode
+                    .Include("~/Content/bootstrap.min.css", new CssRewriteUrlTransform())
+                    .Include("~/Content/bootstrap-material-design.min.css", new CssRewriteUrlTransform())
+                    .Include("~/Content/ripples.min.css", new CssRewriteUrlTransform())
                     .Include("~/Content/toastr.min.css", new CssRewriteUrlTransform())
-                    .Include("~/Scripts/sweetalert/sweet-alert.css", new CssRewriteUrlTransform())
+                    .Include("~/Content/sweetalert2.css", new CssRewriteUrlTransform())
                     .Include("~/Content/flags/famfamfam-flags.css", new CssRewriteUrlTransform())
                     .Include("~/Content/font-awesome.min.css", new CssRewriteUrlTransform())
                 );
@@ -34,12 +38,15 @@ namespace Polex.Web
                         "~/Scripts/jquery-ui-1.11.4.min.js",
 
                         "~/Scripts/bootstrap.min.js",
+                        "~/Scripts/arrive.min.js",
+                        "~/Scripts/ripples.min.js",
+                        "~/Scripts/material.min.js",
 
                         "~/Scripts/moment-with-locales.min.js",
                         "~/Scripts/jquery.validate.min.js",
                         "~/Scripts/jquery.blockUI.js",
                         "~/Scripts/toastr.min.js",
-                        "~/Scripts/sweetalert/sweet-alert.min.js",
+                        "~/Scripts/sweetalert2/sweetalert2.min.js",
                         "~/Scripts/others/spinjs/spin.js",
                         "~/Scripts/others/spinjs/jquery.spin.js",
 
@@ -58,6 +65,7 @@ namespace Polex.Web
                         "~/Abp/Framework/scripts/libs/abp.spin.js",
                         "~/Abp/Framework/scripts/libs/abp.sweet-alert.js",
                         "~/Abp/Framework/scripts/libs/angularjs/abp.ng.js",
+                        "~/Abp/Framework/scripts/libs/abp.material.js",
 
                         "~/Scripts/jquery.signalR-2.2.0.min.js"
                     )
