@@ -22,7 +22,7 @@ Thumbs.db
 [Bb]in
 [Dd]ebug*/
 packages/
-#Zero
+Polex.Web/Zero/
 *.lib
 *.sbr
 obj/
