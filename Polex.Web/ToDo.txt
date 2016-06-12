@@ -2,3 +2,5 @@
 - change user password
 - use angular-moment to format dates
 - preparing of release version (minification, templateCache etc.)
+- sweet-alert is not the best way to show errors
+- in-place validation results http://blog.johnnyreilly.com/2014/08/angularjs-meet-aspnet-server-validation.html
