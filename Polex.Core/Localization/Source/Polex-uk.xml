@@ -71,6 +71,5 @@
   
     <text name="Ajax request did not succeed!" value="Помилка з'єднання з сервером" />
     <text name='Error detail not sent by server.' value="Сервер недоступний" />
-    <text name="EmailAddressNotValid" value="Email адреса має невірний формат" />
   </texts>
 </localizationDictionary>

@@ -1,5 +1,4 @@
-﻿- use same dialog for create and edit user
-- delete user
+﻿- delete user
 - change user password
 - use angular-moment to format dates
 - preparing of release version (minification, templateCache etc.)

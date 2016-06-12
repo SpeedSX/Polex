@@ -95,7 +95,7 @@ namespace Polex.Users
             {
                 throw new UserFriendlyException(
                     _localizationManager.GetString(PolexConsts.AbpWebSourceName, "ValidationError"),
-                    _localizationManager.GetString(PolexConsts.LocalizationSourceName, "EmailAddressNotValid"));
+                    String.Format(_localizationManager.GetString(PolexConsts.AbpZeroSourceName, "Identity.InvalidEmail"), email));
             }
         }
 
