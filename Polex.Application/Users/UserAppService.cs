@@ -63,11 +63,8 @@ namespace Polex.Users
 
         public async Task CreateUser(CreateOrUpdateUserInput input)
         {
-            if (!ValidateEmail(input.EmailAddress))
-            {
-                throw new UserFriendlyException(_localizationManager.GetString(PolexConsts.LocalizationSourceName,
-                            "EmailAddressNotValid"));
-            }
+            ValidateEmail(input.EmailAddress);
+
             var user = input.MapTo<User>();
 
             user.TenantId = AbpSession.TenantId;
@@ -79,11 +76,8 @@ namespace Polex.Users
 
         public async Task UpdateUser(CreateOrUpdateUserInput input)
         {
-            if (!ValidateEmail(input.EmailAddress))
-            {
-                throw new UserFriendlyException(_localizationManager.GetString(PolexConsts.LocalizationSourceName,
-                            "EmailAddressNotValid"));
-            } 
+            ValidateEmail(input.EmailAddress);
+
             var user = await UserManager.GetUserByIdAsync(input.Id);
             user = Mapper.Map(input, user);
 
@@ -95,9 +89,14 @@ namespace Polex.Users
             CheckErrors(await UserManager.UpdateAsync(user));
         }
 
-        private bool ValidateEmail(string email)
+        private void ValidateEmail(string email)
         {
-            return _regex.Match(email).Length > 0;
+            if (_regex.Match(email).Length == 0)
+            {
+                throw new UserFriendlyException(
+                    _localizationManager.GetString(PolexConsts.AbpWebSourceName, "ValidationError"),
+                    _localizationManager.GetString(PolexConsts.LocalizationSourceName, "EmailAddressNotValid"));
+            }
         }
 
         private static Regex CreateEmailRegEx()

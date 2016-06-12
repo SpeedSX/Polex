@@ -45,6 +45,14 @@ namespace Polex
                         )
                     )
             );
+            Configuration.Localization.Sources.Extensions.Add(
+                new LocalizationSourceExtensionInfo("AbpZero",
+                    new XmlEmbeddedFileLocalizationDictionaryProvider(
+                        Assembly.GetExecutingAssembly(),
+                        "Polex.Localization.Zero"
+                        )
+                    )
+            );
 
             AppRoleConfig.Configure(Configuration.Modules.Zero().RoleManagement);
 
