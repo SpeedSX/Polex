@@ -6,6 +6,7 @@ Includes following changes:
 - Create/update users
 - Create/update/delete tenants
 - Updated AngularJS to newer version
+
 Plans:
 - Adopting Angular-material
 - User and tenant administration including roles and permissions
