@@ -44,7 +44,7 @@ namespace Polex
                         "Polex.Localization.Extensions"
                         )
                     )
-    );
+            );
 
             AppRoleConfig.Configure(Configuration.Modules.Zero().RoleManagement);
 

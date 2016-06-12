@@ -25,7 +25,12 @@
                         templateUrl: '/App/Main/views/users/index.cshtml',
                         menu: 'Users' //Matches to name of 'Users' menu in PolexNavigationProvider
                     })
-                    .state('userDetails', {
+                    .state('userNew', {
+                        url: '/users/new',
+                        templateUrl: '/App/Main/views/users/details.cshtml',
+                        menu: 'Users' //Matches to name of 'Users' menu in PolexNavigationProvider
+                    })
+                    .state('usersDetails', {
                         url: '/users/:id',
                         templateUrl: '/App/Main/views/users/details.cshtml',
                         menu: 'Users' //Matches to name of 'Users' menu in PolexNavigationProvider

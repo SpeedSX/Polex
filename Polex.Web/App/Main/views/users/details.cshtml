@@ -4,9 +4,11 @@
         <form name="userEditForm" role="form" novalidate>
             <fieldset>
                 <legend>@L("UserDetails")</legend>
+                
                 <div class="form-group label-floating">
                     <label class="control-label">@L("UserName")</label>
-                    <input autofocus type="text" name="UserName" class="form-control" ng-model="vm.user.userName" required maxlength="@AbpUserBase.MaxUserNameLength">
+                    <input autofocus type="text" name="UserName" class="form-control" ng-model="vm.user.userName" required 
+                           maxlength="@AbpUserBase.MaxUserNameLength" ng-readonly="!vm.isNew">
                 </div>
 
                 <div class="form-group label-floating">
@@ -21,7 +23,7 @@
 
                 <div class="form-group label-floating">
                     <label class="control-label">@L("EmailAddress")</label>
-                    <input type="email" name="EmailAddress" class="form-control" ng-model="vm.user.emailAddress" required maxlength="@Polex.Users.User.MaxEmailAddressLength">
+                    <input type="email" name="EmailAddress" autocomplete="new-email" class="form-control" ng-model="vm.user.emailAddress" required maxlength="@Polex.Users.User.MaxEmailAddressLength">
                 </div>
 
                 <div class="form-group label-floating">
@@ -35,8 +37,8 @@
                     </label>
                 </div>
                 <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-raised" ng-click="vm.save()" ng-disabled="userEditForm.$invalid"><i class="fa fa-save"></i><span> @L("Save")</span></button>
                     <button type="button" class="btn btn-default" ng-click="vm.cancel()">@L("Cancel")</button>
-                    <button type="submit" class="btn btn-primary" ng-click="vm.save()" ng-disabled="userEditForm.$invalid"><i class="fa fa-save"></i><span> @L("Save")</span></button>
                 </div>
             </fieldset>
         </form>

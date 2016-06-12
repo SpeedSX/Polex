@@ -8,8 +8,11 @@
                 id: 0,
                 userName: '',
                 name: '',
-                surname: ''
+                surname: '',
+                isActive: true
             };
+
+            vm.isNew = !$state.params.id;
 
             var loadUser = function() {
                 abp.ui.setBusy(
@@ -22,7 +25,8 @@
             };
 
             vm.save = function () {
-                userService.updateUser(vm.user)
+                var fn = vm.isNew ? userService.createUser : userService.updateUser;
+                fn(vm.user)
                     .success(function () {
                         abp.notify.info(App.localize('SavedSuccessfully'));
                         $state.transitionTo('users');
@@ -33,7 +37,9 @@
                 $state.transitionTo('users');
             };
 
-            loadUser();
+            if (!vm.isNew) {
+                loadUser();
+            }
 
         }
     ]);
