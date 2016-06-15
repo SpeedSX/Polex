@@ -5,4 +5,4 @@
 - refactor $confirm and $error to avoid code duplication, add icons
 - in-place validation results http://blog.johnnyreilly.com/2014/08/angularjs-meet-aspnet-server-validation.html
 - use ui-grid
-- center 
+- abp.jtable.js - needed?

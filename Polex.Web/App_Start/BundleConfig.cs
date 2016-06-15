@@ -20,7 +20,6 @@ namespace Polex.Web
                     .Include("~/Content/bootstrap-material-design.min.css", new CssRewriteUrlTransform())
                     .Include("~/Content/ripples.min.css", new CssRewriteUrlTransform())
                     .Include("~/Content/toastr.min.css", new CssRewriteUrlTransform())
-                    .Include("~/Content/sweetalert2.css", new CssRewriteUrlTransform())
                     .Include("~/Content/flags/famfamfam-flags.css", new CssRewriteUrlTransform())
                     .Include("~/Content/font-awesome.min.css", new CssRewriteUrlTransform())
                 );
@@ -46,7 +45,6 @@ namespace Polex.Web
                         "~/Scripts/jquery.validate.min.js",
                         "~/Scripts/jquery.blockUI.js",
                         "~/Scripts/toastr.min.js",
-                        "~/Scripts/sweetalert2/sweetalert2.min.js",
                         "~/Scripts/others/spinjs/spin.js",
                         "~/Scripts/others/spinjs/jquery.spin.js",
 
@@ -63,7 +61,6 @@ namespace Polex.Web
                         "~/Abp/Framework/scripts/libs/abp.toastr.js",
                         "~/Abp/Framework/scripts/libs/abp.blockUI.js",
                         "~/Abp/Framework/scripts/libs/abp.spin.js",
-                        "~/Abp/Framework/scripts/libs/abp.sweet-alert.js",
                         "~/Abp/Framework/scripts/libs/abp.angular-box.js",
                         "~/Abp/Framework/scripts/libs/angularjs/abp.ng.js",
                         "~/Abp/Framework/scripts/libs/abp.material.js",
