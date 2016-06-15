@@ -1,7 +1,7 @@
 ﻿(function() {
     angular.module('app').controller('app.views.tenants.index', [
-        '$scope', '$uibModal', 'abp.services.app.tenant',
-        function ($scope, $uibModal, tenantService) {
+        '$scope', '$uibModal', '$confirm', 'abp.services.app.tenant',
+        function ($scope, $uibModal, $confirm, tenantService) {
             var vm = this;
 
             vm.tenants = [];
@@ -41,23 +41,20 @@
                 });
             };
 
-            vm.deleteTenant = function(tenant) {
-                abp.message.confirm(
-                    App.localize("DeleteTenantConfirmationText"),
-                    ' ',
-                    function (btn) {
-                        if (btn) {
-                            abp.ui.setBusy();
-                            tenantService.deleteTenant(tenant.id)
-                                .success(function() {
-                                    abp.notify.info(App.localize('DeletedSuccessfully'));
-                                }).finally(function() {
-                                    abp.ui.clearBusy();
-                                    getTenants();
-                                });
-                        }
-                    }
-                );
+            vm.deleteTenant = function (tenant) {
+                $confirm({
+                    text: App.localize("DeleteTenantConfirmationText"),
+                    title: App.localize("DeleteTenantConfirmationTitle")
+                }).then(function() {
+                    abp.ui.setBusy();
+                    tenantService.deleteTenant(tenant.id)
+                        .success(function() {
+                            abp.notify.info(App.localize('DeletedSuccessfully'));
+                        }).finally(function() {
+                            abp.ui.clearBusy();
+                            getTenants();
+                        });
+                });
             };
 
             $scope.formatDate = function(dateString) {

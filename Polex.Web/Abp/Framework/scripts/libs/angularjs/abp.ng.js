@@ -6,123 +6,128 @@
 
     abp.ng = abp.ng || {};
 
-    abp.ng.http = {
-        defaultError: {
-            message: 'Ajax request did not succeed!', // localized id
-            details: 'Error detail not sent by server.' // localized id
-        },
+    var abpModule = angular.module('abp', ['abp.angular-box']);
 
-        logError: function (error) {
-            abp.log.error(error);
-        },
+    abpModule.factory('abpHttpInterceptor', [
+        '$q', '$injector', function($q, $injector) {
 
-        showError: function (error) {
-            if (error.details) {
-                return abp.message.error(error.details, error.message || App.localize(abp.ng.http.defaultError.message));
-            } else {
-                return abp.message.error(error.message || App.localize(abp.ng.http.defaultError.message));
+            var defaultError = {
+                message: 'Ajax request did not succeed!', // localized id
+                details: 'Error detail not sent by server.' // localized id
+            };
+
+            function logError(error) {
+                abp.log.error(error);
             }
-        },
 
-        handleTargetUrl: function (targetUrl) {
-            location.href = targetUrl;
-        },
+            function showError(error) {
+                var $error = $injector.get('$error');
+                if (error.details) {
+                    return $error({
+                        text: error.details,
+                        title: error.message || App.localize(defaultError.message)
+                    });
+                } else {
+                    return $error({ text: error.message || App.localize(defaultError.message) });
+                }
+            }
 
-        handleUnAuthorizedRequest: function (messagePromise, targetUrl) {
-            if (messagePromise) {
-                messagePromise.done(function () {
+            function handleTargetUrl(targetUrl) {
+                location.href = targetUrl;
+            }
+
+            function handleUnAuthorizedRequest(messagePromise, targetUrl) {
+                if (messagePromise) {
+                    messagePromise.done(function() {
+                        if (!targetUrl) {
+                            location.reload();
+                        } else {
+                            handleTargetUrl(targetUrl);
+                        }
+                    });
+                } else {
                     if (!targetUrl) {
                         location.reload();
                     } else {
-                        abp.ng.http.handleTargetUrl(targetUrl);
+                        handleTargetUrl(targetUrl);
                     }
-                });
-            } else {
-                if (!targetUrl) {
-                    location.reload();
-                } else {
-                    abp.ng.http.handleTargetUrl(targetUrl);
                 }
             }
-        },
 
-        handleResponse: function (response, defer) {
-            var originalData = response.data;
+            function handleResponse(response, defer) {
+                var originalData = response.data;
 
-            if (originalData.success === true) {
-                response.data = originalData.result;
-                defer.resolve(response);
+                if (originalData.success === true) {
+                    response.data = originalData.result;
+                    defer.resolve(response);
 
-                if (originalData.targetUrl) {
-                    abp.ng.http.handleTargetUrl(originalData.targetUrl);
+                    if (originalData.targetUrl) {
+                        handleTargetUrl(originalData.targetUrl);
+                    }
+                } else if (originalData.success === false) {
+                    var messagePromise = null;
+
+                    if (originalData.error) {
+                        messagePromise = showError(originalData.error);
+                    } else {
+                        originalData.error = defaultError;
+                    }
+
+                    logError(originalData.error);
+
+                    response.data = originalData.error;
+                    defer.reject(response);
+
+                    if (originalData.unAuthorizedRequest) {
+                        handleUnAuthorizedRequest(messagePromise, originalData.targetUrl);
+                    }
+                } else { //not wrapped result
+                    defer.resolve(response);
                 }
-            } else if (originalData.success === false) {
-                var messagePromise = null;
-
-                if (originalData.error) {
-                    messagePromise = abp.ng.http.showError(originalData.error);
-                } else {
-                    originalData.error = defaultError;
-                }
-
-                abp.ng.http.logError(originalData.error);
-
-                response.data = originalData.error;
-                defer.reject(response);
-
-                if (originalData.unAuthorizedRequest) {
-                    abp.ng.http.handleUnAuthorizedRequest(messagePromise, originalData.targetUrl);
-                }
-            } else { //not wrapped result
-                defer.resolve(response);
             }
+
+            return {
+                'request': function(config) {
+                    if (endsWith(config.url, '.cshtml')) {
+                        config.url = abp.appPath + 'AbpAppView/Load?viewUrl=' + config.url + '&_t=' + abp.pageLoadTime.getTime();
+                    }
+
+                    return config;
+                },
+
+                'response': function(response) {
+                    if (!response.config || !response.config.abp || !response.data) {
+                        return response;
+                    }
+
+                    var defer = $q.defer();
+
+                    handleResponse(response, defer);
+
+                    return defer.promise;
+                },
+
+                'responseError': function(ngError) {
+                    var error = {
+                        message: ngError.data || App.localize(defaultError.message),
+                        details: ngError.statusText || App.localize(defaultError.details),
+                        responseError: true
+                    }
+
+                    showError(error);
+
+                    logError(error);
+
+                    return $q.reject(ngError);
+                }
+
+            };
         }
-    }
-
-    var abpModule = angular.module('abp', []);
+    ]);
 
     abpModule.config([
         '$httpProvider', function ($httpProvider) {
-            $httpProvider.interceptors.push(['$q', function ($q) {
-
-                return {
-
-                    'request': function (config) {
-                        if (endsWith(config.url, '.cshtml')) {
-                            config.url = abp.appPath + 'AbpAppView/Load?viewUrl=' + config.url + '&_t=' + abp.pageLoadTime.getTime();
-                        }
-
-                        return config;
-                    },
-
-                    'response': function (response) {
-                        if (!response.config || !response.config.abp || !response.data) {
-                            return response;
-                        }
-
-                        var defer = $q.defer();
-
-                        abp.ng.http.handleResponse(response, defer);
-
-                        return defer.promise;
-                    },
-
-                    'responseError': function (ngError) {
-                        var error = {
-                            message: ngError.data || App.localize(abp.ng.http.defaultError.message),
-                            details: ngError.statusText || App.localize(abp.ng.http.defaultError.details),
-                            responseError: true
-                        }
-
-                        abp.ng.http.showError(error);
-
-                        abp.ng.http.logError(error);
-
-                        return $q.reject(ngError);
-                    }
-
-                };
-            }]);
+            $httpProvider.interceptors.push('abpHttpInterceptor');
         }
     ]);
 

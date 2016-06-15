@@ -64,6 +64,7 @@ namespace Polex.Web
                         "~/Abp/Framework/scripts/libs/abp.blockUI.js",
                         "~/Abp/Framework/scripts/libs/abp.spin.js",
                         "~/Abp/Framework/scripts/libs/abp.sweet-alert.js",
+                        "~/Abp/Framework/scripts/libs/abp.angular-box.js",
                         "~/Abp/Framework/scripts/libs/angularjs/abp.ng.js",
                         "~/Abp/Framework/scripts/libs/abp.material.js",
 
