@@ -69,8 +69,8 @@ angular.module('abp.angular-box', ['ui.bootstrap.modal'])
     defaultLabels: null,
     init: function () {
         this.defaultLabels = {
-            title: abp.localization.abpWeb('Error'),
-            ok: abp.localization.abpWeb('OK')
+            title: App.localize('Error'),
+            ok: App.localize('OK')
         }
     }
   })
