@@ -343,7 +343,7 @@
     };
 
     abp.ui.unblock = function (elm) {
-        abp.log.warn('abp.ui.unblock is not implemented!');
+        //abp.log.warn('abp.ui.unblock is not implemented!');
     };
 
     /* UI BUSY */

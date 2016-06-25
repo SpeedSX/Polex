@@ -1292,7 +1292,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Scripts\angular-loading-bar\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Polex.Application\Polex.Application.csproj">
       <Project>{edf5d964-4c0f-4f19-b674-58a38a5e5401}</Project>

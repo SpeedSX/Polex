@@ -49,14 +49,14 @@
 
     @Html.IncludeScript("~/Scripts/json2.min.js")
     @Html.IncludeScript("~/Scripts/jquery-2.2.0.min.js")
-    @Html.IncludeScript("~/Scripts/jquery-ui-1.11.4.min.js")
+    <!-- @Html.IncludeScript("~/Scripts/jquery-ui-1.11.4.min.js") -->
     @Html.IncludeScript("~/Scripts/bootstrap.min.js")
     @Html.IncludeScript("~/Scripts/ripples.min.js")
     @Html.IncludeScript("~/Scripts/arrive.min.js")
     @Html.IncludeScript("~/Scripts/material.min.js")
 
     @Html.IncludeScript("~/Scripts/jquery.validate.min.js")
-    @Html.IncludeScript("~/Scripts/jquery.blockUI.js")
+    <!--@Html.IncludeScript("~/Scripts/jquery.blockUI.js")-->
     @Html.IncludeScript("~/Scripts/toastr.min.js")
     @Html.IncludeScript("~/Scripts/others/spinjs/spin.js")
     @Html.IncludeScript("~/Scripts/others/spinjs/jquery.spin.js")
@@ -64,10 +64,12 @@
     @Html.IncludeScript("~/Abp/Framework/scripts/abp.js")
     @Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.jquery.js")
     @Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.toastr.js")
-    @Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.blockUI.js")
+    <!--@Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.blockUI.js")-->
     @Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.spin.js")
     @Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.material.js")
 
+    @Html.IncludeScript("~/Common/Scripts/helpers.js")
+    
 
     <!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->
     <script src="~/api/AbpServiceProxies/GetAll?v=@(Clock.Now.Ticks)"></script>

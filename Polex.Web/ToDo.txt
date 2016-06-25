@@ -1,4 +1,6 @@
-﻿- delete user
+﻿- remove _libconfig.js and blockui
+- check TenantSelection
+- delete user
 - change user password
 - use angular-moment to format dates
 - preparing of release version (minification, templateCache etc.)

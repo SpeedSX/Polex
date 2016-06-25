@@ -1,6 +1,4 @@
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text.RegularExpressions;
 using Abp.Application.Services.Dto;
 using Abp.Auditing;
 using Polex.MultiTenancy;
@@ -8,7 +6,7 @@ using Polex.Users;
 
 namespace Polex.Web.Models.Account
 {
-    public class RegisterViewModel : IInputDto, IValidatableObject
+    public class RegisterViewModel : IInputDto
     {
         /// <summary>
         /// Not required for single-tenant applications.
@@ -37,14 +35,14 @@ namespace Polex.Web.Models.Account
         public string Password { get; set; }
 
         public bool IsExternalLogin { get; set; }
-
-        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
-        {
-            var emailRegex = new Regex(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$");
-            if (!UserName.Equals(EmailAddress) && emailRegex.IsMatch(UserName))
-            {
-                yield return new ValidationResult("Username cannot be an email address unless it's same with your email address !");
-            }
-        }
+//
+//        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+//        {
+//            var emailRegex = new Regex(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$");
+//            if (!UserName.Equals(EmailAddress) && emailRegex.IsMatch(UserName))
+//            {
+//                yield return new ValidationResult("Username cannot be an email address unless it's same with your email address !");
+//            }
+//        }
     }
 }

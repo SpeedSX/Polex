@@ -22,6 +22,7 @@ namespace Polex.Web
                     .Include("~/Content/toastr.min.css", new CssRewriteUrlTransform())
                     .Include("~/Content/flags/famfamfam-flags.css", new CssRewriteUrlTransform())
                     .Include("~/Content/font-awesome.min.css", new CssRewriteUrlTransform())
+                    .Include("~/Content/loading-bar.min.css", new CssRewriteUrlTransform())
                 );
 
             //~/Bundles/App/vendor/js
@@ -55,6 +56,7 @@ namespace Polex.Web
                         "~/Scripts/angular-ui/ui-bootstrap.min.js",
                         "~/Scripts/angular-ui/ui-bootstrap-tpls.min.js",
                         "~/Scripts/angular-ui/ui-utils.min.js",
+                        "~/Scripts/angular-loading-bar/loading-bar.min.js",
 
                         "~/Abp/Framework/scripts/abp.js",
                         "~/Abp/Framework/scripts/libs/abp.jquery.js",

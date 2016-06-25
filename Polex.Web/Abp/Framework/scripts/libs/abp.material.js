@@ -5,7 +5,7 @@
     }
 
     $(function () {
-        $.material.options.autofill = true;
+        //$.material.options.autofill = true;
         $.material.init();
     });
 })(jQuery);

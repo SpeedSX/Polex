@@ -9,7 +9,6 @@ using Abp.Domain.Repositories;
 using Abp.Localization;
 using Abp.UI;
 using AutoMapper;
-using Nito.AsyncEx;
 using Polex.Authorization;
 using Polex.Users.Dto;
 using Microsoft.AspNet.Identity;

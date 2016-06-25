@@ -1,4 +1,4 @@
-﻿(function ($) {
+﻿(function ($, App) {
 
     if (!$) {
         return;
@@ -38,6 +38,8 @@
                 form.submit();
             }
         });
+        $("input[name='TenancyName']").focus();
+        App.fixPassword($('#PasswordGroup'));
     });
 
-})(jQuery);
+})(jQuery, App);

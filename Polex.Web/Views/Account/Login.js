@@ -1,21 +1,40 @@
-﻿(function () {
+﻿(function (App) {
 
     $(function () {
+        $.material.options.autofill = true;
+
+        function showError(msg) {
+            var al = $('form div.alert');
+            al.html(al.find('i')[0].outerHTML + ' ' + msg);
+            al.show();
+        }
+
+        function hideError() {
+            $('form div.alert').hide();
+        }
+
         $('#LoginButton').click(function (e) {
             e.preventDefault();
             abp.ui.setBusy(
                 $('#LoginArea'),
-                abp.ajax({
-                    url: abp.appPath + 'Account/Login',
-                    type: 'POST',
-                    data: JSON.stringify({
-                        tenancyName: $('#TenancyName').val(),
-                        usernameOrEmailAddress: $('#EmailAddressInput').val(),
-                        password: $('#PasswordInput').val(),
-                        rememberMe: $('#RememberMeInput').is(':checked'),
-                        returnUrlHash: $('#ReturnUrlHash').val()
+                {
+                    blockUI: false,
+                    promise: abp.ajax({
+                        type: 'POST',
+                        url: abp.appPath + 'Account/Login',
+                        data: JSON.stringify({
+                            tenancyName: $('#TenancyName').val(),
+                            usernameOrEmailAddress: $('#EmailAddressInput').val(),
+                            password: $('#PasswordInput').val(),
+                            rememberMe: $('#RememberMeInput').is(':checked'),
+                            returnUrlHash: $('#ReturnUrlHash').val()
+                        })
                     })
-                })
+                    .done(hideError)
+                    .fail(function (data) {
+                        showError(data.details || data.message || App.localize('Ajax request did not succeed!'));
+                    })
+                }
             );
         });
 
@@ -28,7 +47,10 @@
 
         $('#ReturnUrlHash').val(location.hash);
 
-        $('#LoginForm input:first-child').focus();
+        $('#TenancyName').focus();
+
+        var element = $('#PasswordGroup');
+        App.fixPassword(element);
     });
 
-})();
+})(App);

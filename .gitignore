@@ -22,6 +22,7 @@ Thumbs.db
 [Bb]in
 [Dd]ebug*/
 packages/
+bower_components/
 Polex.Web/Zero/
 *.lib
 *.sbr

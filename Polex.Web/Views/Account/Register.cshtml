@@ -10,7 +10,7 @@
     <div id="LoginArea" class="row">
         <div class="col-lg-12">
             <div class="well">
-                <form class="form-horizontal" action="@(Url.Action("Register","Account"))" method="POST">
+                <form action="@(Url.Action("Register","Account"))" method="POST">
                     <fieldset>
                         <legend>@L("Register")</legend>
 
@@ -23,49 +23,41 @@
 
                         @if (ViewBag.IsMultiTenancyEnabled)
                         {
-                            <div class="form-group">
-                                <div class="col-lg-12">
-                                    <input type="text" class="form-control" name="TenancyName" placeholder="@L("TenancyName")" value="@Model.TenancyName" required maxlength="@Polex.MultiTenancy.Tenant.MaxTenancyNameLength">
-                                </div>
+                            <div class="form-group label-floating">
+                                <label class="control-label">@L("TenancyName")</label>
+                                <input type="text" class="form-control" name="TenancyName" value="@Model.TenancyName" required maxlength="@Polex.MultiTenancy.Tenant.MaxTenancyNameLength">
                             </div>
                         }
 
                         <input type="hidden" name="IsExternalLogin" value="@Model.IsExternalLogin.ToString()" />
 
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <input type="text" class="form-control" name="Name" value="@Model.Name" placeholder="@L("Name")" required maxlength="@Polex.Users.User.MaxNameLength">
-                            </div>
+                        <div class="form-group label-floating">
+                            <label class="control-label">@L("Name")</label>
+                            <input type="text" class="form-control" name="Name" value="@Model.Name" required maxlength="@Polex.Users.User.MaxNameLength">
+                        </div>
+
+                        <div class="form-group label-floating">
+                            <label class="control-label">@L("Surname")</label>
+                            <input type="text" class="form-control" name="Surname" value="@Model.Surname" required maxlength="@Polex.Users.User.MaxSurnameLength">
+                        </div>
+
+                        <div class="form-group label-floating">
+                            <label class="control-label">@L("EmailAddress")</label>
+                            <input type="email" class="form-control" name="EmailAddress" value="@Model.EmailAddress" required maxlength="@Polex.Users.User.MaxEmailAddressLength">
+                        </div>
+
+                        <div class="form-group label-floating">
+                            <label class="control-label">@L("UserName")</label>
+                            <input type="text" class="form-control" name="UserName" value="@Model.UserName" required maxlength="@Polex.Users.User.MaxUserNameLength">
+                        </div>
+
+                        <div id="PasswordGroup" class="form-group label-floating">
+                            <label class="control-label">@L("Password")</label>
+                            <input type="password" class="form-control" name="Password" required maxlength="@Polex.Users.User.MaxPlainPasswordLength">
                         </div>
 
                         <div class="form-group">
-                            <div class="col-lg-12">
-                                <input type="text" class="form-control" name="Surname" value="@Model.Surname" placeholder="@L("Surname")" required maxlength="@Polex.Users.User.MaxSurnameLength">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <input type="email" class="form-control" name="EmailAddress" value="@Model.EmailAddress" placeholder="@L("EmailAddress")" required maxlength="@Polex.Users.User.MaxEmailAddressLength">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <input type="text" class="form-control" name="UserName" value="@Model.UserName" placeholder="@L("UserName")" required maxlength="@Polex.Users.User.MaxUserNameLength">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <input type="password" class="form-control" name="Password" placeholder="@L("Password")" required maxlength="@Polex.Users.User.MaxPlainPasswordLength">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <button type="submit" id="RegisterButton" class="btn btn-primary"><i class="fa fa-sign-in"></i> @L("Register")</button>
-                            </div>
+                            <button type="submit" id="RegisterButton" class="btn btn-primary"><i class="fa fa-sign-in"></i> @L("Register")</button>
                         </div>
                     </fieldset>
                 </form>

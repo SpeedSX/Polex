@@ -8,6 +8,7 @@
         'ui.router',
         'ui.bootstrap',
         'ui.jq',
+        'angular-loading-bar',
 
         'abp'
     ]);
@@ -60,5 +61,8 @@
                     menu: 'About' //Matches to name of 'About' menu in PolexNavigationProvider
                 });
         }
-    ]);
+    ])
+    .config(['cfpLoadingBarProvider', function (cfpLoadingBarProvider) {
+        cfpLoadingBarProvider.includeSpinner = false;
+    }]);
 })();
