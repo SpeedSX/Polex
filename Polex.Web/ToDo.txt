@@ -1,4 +1,7 @@
-﻿- remove _libconfig.js and blockui
+﻿- is it possible to remove duplication of ajax handling on login page and angularjs app? 
+  maybe creating a separate angularjs app for login can fix that?
+- remove _libconfig.js and blockui
+- create bower.json and get more deps from bower?
 - check TenantSelection
 - delete user
 - change user password

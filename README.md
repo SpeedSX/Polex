@@ -6,8 +6,10 @@ Includes following changes:
 - Create/update users
 - Create/update/delete tenants
 - Updated AngularJS to newer version
+- Using angular-loading-bar to show progress of AJAX request (https://github.com/chieffancypants/angular-loading-bar)
+- Removed sweet-alert and using uibModal for message dialogs
 
 Plans:
 - Adopting Angular-material
-- User and tenant administration including roles and permissions
+- User and tenant administration including roles and permissions - in progress
 
