@@ -80,7 +80,7 @@ namespace Polex.Users
             var user = await UserManager.GetUserByIdAsync(input.Id);
             user = Mapper.Map(input, user);
 
-            if (!String.IsNullOrEmpty(user.Password)) // password is ignored in mapping, check it separately
+            if (!String.IsNullOrEmpty(input.Password)) // password is ignored in mapping, check it separately
             {
                 user.Password = new PasswordHasher().HashPassword(input.Password);
             }

@@ -71,7 +71,7 @@
     <text name="Error" value="Помилка" />
     <text name="OK" value="Гаразд" />
 
-    <text name="Ajax request did not succeed!" value="Помилка з'єднання з сервером" />
+    <text name="Ajax request did not succeed!" value="Помилка при виконанні запиту до сервера" />
     <text name='Error detail not sent by server.' value="Сервер недоступний" />
   </texts>
 </localizationDictionary>
